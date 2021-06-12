@@ -1,0 +1,586 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes"?>
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Strict//EN"
+    "http://www.w3.org/TR/xhtml1/DTD/xhtml1-strict.dtd">
+
+<html xmlns="http://www.w3.org/1999/xhtml">
+    <head>
+        <meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+        <meta id="viewport" name="viewport" content="width=320; initial-scale=0.9; maximum-scale=0.9; user-scalable=no;" />
+        <title>Library</title>
+        <link rel="stylesheet" href="style.css" type="text/css" />
+        <script type="text/javascript" src="prototype.js"></script>
+        <script type="text/javascript" src="animator.js"></script>
+        <script type="text/javascript" src="library.js"></script>
+    </head>
+    <body>
+        <div id="libraryheader" style="width: 100%; height: 88px; background: url(../images/shelfheader.jpg)">
+            <div id="librarybanner">Library</div>
+            <div id="shelfnavigation">
+            <select class="shelf_selection" onchange="location.href = this.options[this.selectedIndex].value;"><option value="index.html" >AudioBooks</option><option value="englisheducational.html" >English Educational</option><option value="englishnovels.html" >English Novels</option><option value="finance.html" >Finance</option><option value="kidsmovies.html" >Kids Movies</option><option value="kidssection.html" selected="selected">Kids Section</option><option value="itunesaudiobooks.html" >iTunes Audiobooks</option></select>
+        </div>
+        </div>
+        <table id="mediatable" border="0" cellspacing="0" cellpadding="0" style="width: 100%; background-image: url(../images/shelfpattern.png)">
+            <tr id="collection">
+                <td>
+                    <div class="medium">
+                        <div class="title">2001: A Joke Odyssey</div>
+                        <span class="creator">Sandy Ransford</span>
+                        <span class="rating"></span>
+                        <span class="asin">0330349880</span>
+                        <span class="description">A fantastic collection of 2001 hilariously funny jokes about anything and everything in celebration of the millennium.</span>
+                        <div class="cover">
+                            <img src="../images/139B1859-9483-432C-9E9E-9FA380B43683-140.png" onclick="showDetails(this, event)" alt="" style="max-width: 110px; max-height: 110px" />
+                        </div>
+                    </div>
+                    <div class="medium">
+                        <div class="title">Animal Stories for Under Fives</div>
+                        <span class="creator">Joan Stimson</span>
+                        <span class="rating"></span>
+                        <span class="asin">0721416373</span>
+                        <span class="description">ECB-05</span>
+                        <div class="cover">
+                            <img src="../images/CF0EB9C8-9341-4B42-BA57-5BFB927D6A09-140.png" onclick="showDetails(this, event)" alt="" style="max-width: 110px; max-height: 110px" />
+                        </div>
+                    </div>
+                    <div class="medium">
+                        <div class="title">Animals at Work: How Animals Build, Dig, Fish and Trap</div>
+                        <span class="creator">Etta Kaner</span>
+                        <span class="rating"></span>
+                        <span class="asin">1550746758</span>
+                        <span class="description">Did you know that termites build towers as tall as houses? Or that ogre-faced spiders throw net traps over their prey? Whether it's to gather food, build shelter or attract a mate, animals work in unexpected ways. Kids can try activities that demonstrate some surprising animal skills, like blowing bubbles the way a spittlebug does to hide itself from predators. Or mastering the half hitch and running knots that the weaverbird ties (with its feet!) when it builds a nest. Using concise language and realistic illustrations, this title in the Animal Behavior series takes a resourceful approach to exploring animal life.</span>
+                        <div class="cover">
+                            <img src="../images/58C84FF9-82EF-4EAD-B163-C5A5F9DEE857-140.png" onclick="showDetails(this, event)" alt="" style="max-width: 110px; max-height: 110px" />
+                        </div>
+                    </div>
+                    <div class="medium">
+                        <div class="title">Baby's World Shaped Board: Good Night</div>
+                        <span class="creator">Anne Millard</span>
+                        <span class="rating"></span>
+                        <span class="asin">0789485648</span>
+                        <span class="description">Unlock your babies learning potential! DK's new Baby's World series uses bold, full-color photography of everyday objects paired with clear, precise word labels which have been carefully designed to support children's first phase of intellectual development. There is now much evidence to support that reading with infants has a profound impact on a variety of essential skills that are the basis for a lifetime of learning happiness. This series is an ideal way to maximize babies' potential while sharing the joys of reading with parents and caregivers.</span>
+                        <div class="cover">
+                            <img src="../images/65558E67-5559-49D9-99B5-51B03D44D3C8-140.png" onclick="showDetails(this, event)" alt="" style="max-width: 110px; max-height: 110px" />
+                        </div>
+                    </div>
+                    <div class="medium">
+                        <div class="title">Birds Sticker Book</div>
+                        <span class="creator"></span>
+                        <span class="rating"></span>
+                        <span class="asin">0721426042</span>
+                        <span class="description">This sticker book introduces children to some of the world's most fascinating birds.</span>
+                        <div class="cover">
+                            <img src="../images/85B5D077-4978-4CFD-8BF1-EAE1BE35EB62-140.png" onclick="showDetails(this, event)" alt="" style="max-width: 110px; max-height: 110px" />
+                        </div>
+                    </div>
+                    <div class="medium">
+                        <div class="title">BRIGHT AND BEAUTIFUL (H) 91 PRINTING</div>
+                        <span class="creator">a</span>
+                        <span class="rating"></span>
+                        <span class="asin">0673726592</span>
+                        <span class="description"></span>
+                        <div class="cover">
+                            <img src="../images/1AD948F1-EF3D-4AC6-861F-7274449BF6A0-140.png" onclick="showDetails(this, event)" alt="" style="max-width: 110px; max-height: 110px" />
+                        </div>
+                    </div>
+                    <div class="medium">
+                        <div class="title">Cinderella</div>
+                        <span class="creator">Disney</span>
+                        <span class="rating"></span>
+                        <span class="asin">0721435866</span>
+                        <span class="description"></span>
+                        <div class="cover">
+                            <img src="../images/C323993D-CCE9-4E38-97F4-53F24BCB03CC-140.png" onclick="showDetails(this, event)" alt="" style="max-width: 110px; max-height: 110px" />
+                        </div>
+                    </div>
+                    <div class="medium">
+                        <div class="title">Custom Motorcycles</div>
+                        <span class="creator">Michael; Gassebner, Jurgen Pfeiffer</span>
+                        <span class="rating"></span>
+                        <span class="asin">1898250766</span>
+                        <span class="description"></span>
+                        <div class="cover">
+                            <img src="../images/F5DFFC45-CE53-4877-812B-0D74413EF7CC-140.png" onclick="showDetails(this, event)" alt="" style="max-width: 110px; max-height: 110px" />
+                        </div>
+                    </div>
+                    <div class="medium">
+                        <div class="title">Disney's Kim Possible: Extreme - Book #10: Chapter Book</div>
+                        <span class="creator">tk</span>
+                        <span class="rating"></span>
+                        <span class="asin">078683689X</span>
+                        <span class="description">What a mess. First Kim’s best friend, Ron Stoppable, starts writing for the school paper. No big, right? But then he starts digging for dirt-and finds it. Adrena-Lynn, the big TV star known for her “ extreme” adventures, is nothing but a fake. She uses a dummy for all her dangerous stunts. After Ron’s big story gets printed, Adrena-Lynn’s hot show gets canceled. Now Adrena-Lynn wants to cancel Ron! Can Kim save her best bud from the Queen of Extreme?</span>
+                        <div class="cover">
+                            <img src="../images/E4D77A5E-F564-4159-87CE-29CBFD003DF2-140.png" onclick="showDetails(this, event)" alt="" style="max-width: 110px; max-height: 110px" />
+                        </div>
+                    </div>
+                    <div class="medium">
+                        <div class="title">Dragon, Readers Library Take Home Level 3 Set of 5: Houghton Mifflin the Nation's Choice</div>
+                        <span class="creator"></span>
+                        <span class="rating"></span>
+                        <span class="asin">0618207813</span>
+                        <span class="description">A Polish folktale. A hungry dragon comes to town. Can the people save their village?</span>
+                        <div class="cover">
+                            <img src="../images/B40251D9-4764-41EA-87C0-E1E3C3304D26-140.png" onclick="showDetails(this, event)" alt="" style="max-width: 110px; max-height: 110px" />
+                        </div>
+                    </div>
+                    <div class="medium">
+                        <div class="title">Enormous Turnip</div>
+                        <span class="creator">Fran Hunia</span>
+                        <span class="rating"></span>
+                        <span class="asin">0721406165</span>
+                        <span class="description">A rewritten title from the previous "Read it Yourself" series with the original concept of the child reading a familiar story and the link with Key Words retained. It is part of Ladybird's overall "Learning to Read" programme which can be used alongside any other reading scheme.</span>
+                        <div class="cover">
+                            <img src="../images/896FA053-5DA7-4B2C-B23A-BDF2F87B28C6-140.png" onclick="showDetails(this, event)" alt="" style="max-width: 110px; max-height: 110px" />
+                        </div>
+                    </div>
+                    <div class="medium">
+                        <div class="title">Funfax Spy File: Deadly Dangerous Adventure Pb</div>
+                        <span class="creator">John McClelland</span>
+                        <span class="rating"></span>
+                        <span class="asin">1855973073</span>
+                        <span class="description"></span>
+                        <div class="cover">
+                            <img src="../images/7A30B99C-B455-44EB-A22E-24B08739BFBE-140.png" onclick="showDetails(this, event)" alt="" style="max-width: 110px; max-height: 110px" />
+                        </div>
+                    </div>
+                    <div class="medium">
+                        <div class="title">The Gargoyle</div>
+                        <span class="creator"></span>
+                        <span class="rating"></span>
+                        <span class="asin">0749728892</span>
+                        <span class="description"></span>
+                        <div class="cover">
+                            <img src="../images/3BBE32BD-B9A0-4FD2-A766-FEC455168E42-140.png" onclick="showDetails(this, event)" alt="" style="max-width: 110px; max-height: 110px" />
+                        </div>
+                    </div>
+                    <div class="medium">
+                        <div class="title">Going to the Playground</div>
+                        <span class="creator">Mary Haselden</span>
+                        <span class="rating"></span>
+                        <span class="asin">0721408516</span>
+                        <span class="description">ECB-13</span>
+                        <div class="cover">
+                            <img src="../images/51B5647A-F91C-4F33-9A74-AD557E064FFF-140.png" onclick="showDetails(this, event)" alt="" style="max-width: 110px; max-height: 110px" />
+                        </div>
+                    </div>
+                    <div class="medium">
+                        <div class="title">Hansel and Gretel</div>
+                        <span class="creator">Fran Hunia, Anne Dzierzek</span>
+                        <span class="rating"></span>
+                        <span class="asin">0721405266</span>
+                        <span class="description">A rewritten title from the previous "Read it Yourself" series with the original concept of the child reading a familiar story and the link with Key Words retained. It is part of Ladybird's overall "Learning to Read" programme which can be used alongside any other reading scheme.</span>
+                        <div class="cover">
+                            <img src="../images/6B0DF540-D74A-4207-97B6-AB947222F1EC-140.png" onclick="showDetails(this, event)" alt="" style="max-width: 110px; max-height: 110px" />
+                        </div>
+                    </div>
+                    <div class="medium">
+                        <div class="title">The Hidden Staircase</div>
+                        <span class="creator">Carolyn Keene</span>
+                        <span class="rating"></span>
+                        <span class="asin">0448095025</span>
+                        <span class="description">Teenage detective Nancy Drew uses her courage and powers of deduction to solve the mysterious happenings in an old stone mansion.</span>
+                        <div class="cover">
+                            <img src="../images/BAC9951B-9F6C-4146-9549-C499663F7306-140.png" onclick="showDetails(this, event)" alt="" style="max-width: 110px; max-height: 110px" />
+                        </div>
+                    </div>
+                    <div class="medium">
+                        <div class="title">The Hot Cross Bunny Joke Book</div>
+                        <span class="creator">Nora Carrot</span>
+                        <span class="rating"></span>
+                        <span class="asin">0749709251</span>
+                        <span class="description">A book of crazy rabbit jokes. Nora Carrot is a pseudonym of Martyn Forrester, who also wrote "The Pink and Wobbly Joke Book", "The Yellow and Highly Dangerous Joke Book", "The Purple and Spotty Joke Book" and "The Green and Hairy Joke Book".</span>
+                        <div class="cover">
+                            <img src="../images/0776CEC8-4AC7-460E-81D3-00B2D673F5A8-140.png" onclick="showDetails(this, event)" alt="" style="max-width: 110px; max-height: 110px" />
+                        </div>
+                    </div>
+                    <div class="medium">
+                        <div class="title">Hunted Along the Rhine</div>
+                        <span class="creator">Peter Reese Doyle</span>
+                        <span class="rating"></span>
+                        <span class="asin">1561792608</span>
+                        <span class="description">ECB-36</span>
+                        <div class="cover">
+                            <img src="../images/8C3D4513-87AA-4663-9011-07DCEBE4194F-140.png" onclick="showDetails(this, event)" alt="" style="max-width: 110px; max-height: 110px" />
+                        </div>
+                    </div>
+                    <div class="medium">
+                        <div class="title">I Can Tell the Time</div>
+                        <span class="creator">Nina Filipek, Louise Barrell</span>
+                        <span class="rating"></span>
+                        <span class="asin">0723587876</span>
+                        <span class="description"></span>
+                        <div class="cover">
+                            <img src="../images/A249411C-AFE4-49BA-8040-F79864079482-140.png" onclick="showDetails(this, event)" alt="" style="max-width: 110px; max-height: 110px" />
+                        </div>
+                    </div>
+                    <div class="medium">
+                        <div class="title">I Can Tell the Time</div>
+                        <span class="creator">Glynis Langley</span>
+                        <span class="rating"></span>
+                        <span class="asin">0723549605</span>
+                        <span class="description"></span>
+                        <div class="cover">
+                            <img src="../images/EADDD080-CC69-44D4-9FAE-AFC67A4BD4F9-140.png" onclick="showDetails(this, event)" alt="" style="max-width: 110px; max-height: 110px" />
+                        </div>
+                    </div>
+                    <div class="medium">
+                        <div class="title">Joseph the Dreamer</div>
+                        <span class="creator">Penny Frank</span>
+                        <span class="rating"></span>
+                        <span class="asin">0745917526</span>
+                        <span class="description"></span>
+                        <div class="cover">
+                            <img src="../images/E5577147-D997-4BE7-9503-30EA7508C15A-140.png" onclick="showDetails(this, event)" alt="" style="max-width: 110px; max-height: 110px" />
+                        </div>
+                    </div>
+                    <div class="medium">
+                        <div class="title">Joseph's coat</div>
+                        <span class="creator">Janet Holm McHenry</span>
+                        <span class="rating"></span>
+                        <span class="asin">1555135331</span>
+                        <span class="description">ECB-60</span>
+                        <div class="cover">
+                            <img src="../images/9521B197-D851-4576-B65B-C6EB2A2F2BCD-140.png" onclick="showDetails(this, event)" alt="" style="max-width: 110px; max-height: 110px" />
+                        </div>
+                    </div>
+                    <div class="medium">
+                        <div class="title">King Solomon</div>
+                        <span class="creator"></span>
+                        <span class="rating"></span>
+                        <span class="asin">B0007V3NT2</span>
+                        <span class="description">King Solomon ruled with justice and fairness, and the people of Israel trusted him and relied on his judments..</span>
+                        <div class="cover">
+                            <img src="../images/1411CC47-9BE7-407C-A107-1E608EA6A4F8-140.png" onclick="showDetails(this, event)" alt="" style="max-width: 110px; max-height: 110px" />
+                        </div>
+                    </div>
+                    <div class="medium">
+                        <div class="title">Lost in the Secret Cave</div>
+                        <span class="creator">Peter Reese Doyle</span>
+                        <span class="rating"></span>
+                        <span class="asin">1561794813</span>
+                        <span class="description">While touring the coast of Portugal with their friend David, Penny and Mark Daring discover a gold-smuggling ring inside an ocean cave and find themselves in great danger as they try to evade their pursuers through unfamiliar tunnels.</span>
+                        <div class="cover">
+                            <img src="../images/9A8E9139-5EC5-4770-BB33-9C23462230F9-140.png" onclick="showDetails(this, event)" alt="" style="max-width: 110px; max-height: 110px" />
+                        </div>
+                    </div>
+                    <div class="medium">
+                        <div class="title">The Magic Paintbrush</div>
+                        <span class="creator">Fran Hunia</span>
+                        <span class="rating"></span>
+                        <span class="asin">0721406017</span>
+                        <span class="description"></span>
+                        <div class="cover">
+                            <img src="../images/AB384D4D-FE39-4FCB-8DD3-49F515F56A67-140.png" onclick="showDetails(this, event)" alt="" style="max-width: 110px; max-height: 110px" />
+                        </div>
+                    </div>
+                    <div class="medium">
+                        <div class="title">Magnets</div>
+                        <span class="creator">Anne Schreiber</span>
+                        <span class="rating"></span>
+                        <span class="asin">0448431491</span>
+                        <span class="description">What's strong enough to smash atoms? What's able to power high speed trains? What can defy the force of gravity? It's in metals. It's in Earth. It's magnetism! Filled with interesting facts and easy at-home magnet experiments.</span>
+                        <div class="cover">
+                            <img src="../images/0B6CDA3A-5D99-45A7-B156-76714135CC0D-140.png" onclick="showDetails(this, event)" alt="" style="max-width: 110px; max-height: 110px" />
+                        </div>
+                    </div>
+                    <div class="medium">
+                        <div class="title">Mighty One the Wizard</div>
+                        <span class="creator">Enid Blyton</span>
+                        <span class="rating"></span>
+                        <span class="asin">1841354880</span>
+                        <span class="description"></span>
+                        <div class="cover">
+                            <img src="../images/B2335FEA-A7F0-430E-86EE-28BA83A19E56-140.png" onclick="showDetails(this, event)" alt="" style="max-width: 110px; max-height: 110px" />
+                        </div>
+                    </div>
+                    <div class="medium">
+                        <div class="title">Most Important Story Ever Told</div>
+                        <span class="creator">Unknown</span>
+                        <span class="rating"></span>
+                        <span class="asin">1896658113</span>
+                        <span class="description"></span>
+                        <div class="cover">
+                            <img src="../images/DA2D0F29-1519-470E-98A1-CF5FFD687CB0-140.png" onclick="showDetails(this, event)" alt="" style="max-width: 110px; max-height: 110px" />
+                        </div>
+                    </div>
+                    <div class="medium">
+                        <div class="title">My Home</div>
+                        <span class="creator">Rod Campbell, Peter Loughran</span>
+                        <span class="rating"></span>
+                        <span class="asin">1852922125</span>
+                        <span class="description">A new title in the BIG BOARD BOOKS series, illustrated throughout with full colour photographs.</span>
+                        <div class="cover">
+                            <img src="../images/38EDD98C-F388-4678-862B-0D2B6B59BAA9-140.png" onclick="showDetails(this, event)" alt="" style="max-width: 110px; max-height: 110px" />
+                        </div>
+                    </div>
+                    <div class="medium">
+                        <div class="title">Nursery Collection</div>
+                        <span class="creator">Shirley Hughes</span>
+                        <span class="rating"></span>
+                        <span class="asin">0744532108</span>
+                        <span class="description">This is a rhyming nursery picture book featuring a lively toddler and her baby brother. This material was originally published in a series of six small titles, five of which are included in this book - "Colours", "All Shapes and Sizes", "Noisy", "Bathwater's Hot" and "When We Went to the Park". Shirley Hughes has won the Kate Greenaway Medal for "Dogger" and the Eleanor Farjeon Award for her services to children's literature. Her other books include "Out and About", "Angel Mae", "The Big Concrete Lorry", "The Snow Lady", "Wheels", "Giving", "Bouncing", "Chatting" and "Hiding".</span>
+                        <div class="cover">
+                            <img src="../images/94924308-62D8-4657-ADFD-7160E5921016-140.png" onclick="showDetails(this, event)" alt="" style="max-width: 110px; max-height: 110px" />
+                        </div>
+                    </div>
+                    <div class="medium">
+                        <div class="title">Old MacDonald</div>
+                        <span class="creator">Rosemary Wells</span>
+                        <span class="rating"></span>
+                        <span class="asin">0590769855</span>
+                        <span class="description">A beloved nursery rhyme classic to put your child on the road to reading!<br />
+                            <br />
+                            Rosemary Wells, one of America's foremost creators of children's books, will have the very youngest child turning pages and remembering the words. What better way instill a lifetime love of reading and learning?</span>
+                        <div class="cover">
+                            <img src="../images/B2B56A24-05AE-48C9-AA13-899BADE6C1B5-140.png" onclick="showDetails(this, event)" alt="" style="max-width: 110px; max-height: 110px" />
+                        </div>
+                    </div>
+                    <div class="medium">
+                        <div class="title">Old Macdonald's Farm</div>
+                        <span class="creator">HY MURDOCK</span>
+                        <span class="rating"></span>
+                        <span class="asin">0721408702</span>
+                        <span class="description">ECB-09</span>
+                        <div class="cover">
+                            <img src="../images/95D99847-D147-4F7A-BD13-FC920F8E6B42-140.png" onclick="showDetails(this, event)" alt="" style="max-width: 110px; max-height: 110px" />
+                        </div>
+                    </div>
+                    <div class="medium">
+                        <div class="title">Oxford Reading Tree: Stage 4: Storybooks: House for Sale</div>
+                        <span class="creator">Roderick Hunt</span>
+                        <span class="rating"></span>
+                        <span class="asin">0198451539</span>
+                        <span class="description">"Oxford Reading Tree" remains the nation's favorite reading scheme and countless children have learnt to read with Biff, Chip, and Kipper. We are delighted to unveil its fresh new look for today's children, teachers and parents, with lively new covers and fresh artwork. Engaging new artwork and covers - Alex Brychta's unique style of artwork enthralls and entertains children, and the fresh new look will heighten their pleasure in reading the stories. With freshly drawn artwork for all the favorite core stories at Stages 2 - 5 and fantastic new covers, "Oxford Reading Tree" is more appealing than ever! Stories children love - The "Oxford Reading Tree" stories have always captivated children's imagination, inspiring them to read - and the stories and characters in the new editions haven't changed at all. Apart, that is, from an exciting new story at Stage 3, "The Egg Hunt", which replaces the "Dolphin Pool". Simplified structure - We have also simplified the structure of the scheme in response to feedback from you: "Owls" Storybooks become Stages 6 and 7 Storybooks; "Magpies" become Stages 8 and 9 Storybooks; "Wrens" at Stages 2 have become patterned stories at Stages 1+ and Stage 2; and "Wrens" at Stage 3 are now patterned stories at Stage 2. New teaching support material - In addition to the existing guided reading cards, perfect for use in guided reading sessions, we have brought out new teaching materials to reflect the needs of teachers in today's classroom: flexible, friendly teacher's notes included free with each pack of "Oxford Reading Tree" books - these are easy to store and will save you hours of preparation!; new Take-Home cards for every Storybook from Stages 1 - 9 to help parents or carers get the most out of reading with their child; free resources website with downloadable photocopy masters; and new "Teacher's Handbook" and special edition for Scotland.</span>
+                        <div class="cover">
+                            <img src="../images/062F5F4A-E432-4B74-B7BF-851BBDA8FE04-140.png" onclick="showDetails(this, event)" alt="" style="max-width: 110px; max-height: 110px" />
+                        </div>
+                    </div>
+                    <div class="medium">
+                        <div class="title">Oxford Reading Tree: Stage 4: Storybooks: the Play</div>
+                        <span class="creator">Roderick Hunt</span>
+                        <span class="rating"></span>
+                        <span class="asin">0198451571</span>
+                        <span class="description">"Oxford Reading Tree" remains the nation's favorite reading scheme and countless children have learnt to read with Biff, Chip, and Kipper. We are delighted to unveil its fresh new look for today's children, teachers and parents, with lively new covers and fresh artwork. Engaging new artwork and covers - Alex Brychta's unique style of artwork enthralls and entertains children, and the fresh new look will heighten their pleasure in reading the stories. With freshly drawn artwork for all the favorite core stories at Stages 2 - 5 and fantastic new covers, "Oxford Reading Tree" is more appealing than ever! Stories children love - The "Oxford Reading Tree" stories have always captivated children's imagination, inspiring them to read - and the stories and characters in the new editions haven't changed at all. Apart, that is, from an exciting new story at Stage 3, "The Egg Hunt", which replaces the "Dolphin Pool". Simplified structure - We have also simplified the structure of the scheme in response to feedback from you: "Owls" Storybooks become Stages 6 and 7 Storybooks; "Magpies" become Stages 8 and 9 Storybooks; "Wrens" at Stages 2 have become patterned stories at Stages 1+ and Stage 2; and "Wrens" at Stage 3 are now patterned stories at Stage 2. New teaching support material - In addition to the existing guided reading cards, perfect for use in guided reading sessions, we have brought out new teaching materials to reflect the needs of teachers in today's classroom: flexible, friendly teacher's notes included free with each pack of "Oxford Reading Tree" books - these are easy to store and will save you hours of preparation!; new Take-Home cards for every Storybook from Stages 1 - 9 to help parents or carers get the most out of reading with their child; free resources website with downloadable photocopy masters; and new "Teacher's Handbook" and special edition for Scotland.</span>
+                        <div class="cover">
+                            <img src="../images/72024AAF-0B34-49B7-A2B7-5144C872A089-140.png" onclick="showDetails(this, event)" alt="" style="max-width: 110px; max-height: 110px" />
+                        </div>
+                    </div>
+                    <div class="medium">
+                        <div class="title">Oxford Reading Tree: Stage 4: Storybooks: the Secret Room</div>
+                        <span class="creator">Roderick Hunt</span>
+                        <span class="rating"></span>
+                        <span class="asin">0198451563</span>
+                        <span class="description">"Oxford Reading Tree" remains the nation's favorite reading scheme and countless children have learnt to read with Biff, Chip, and Kipper. We are delighted to unveil its fresh new look for today's children, teachers and parents, with lively new covers and fresh artwork. Engaging new artwork and covers - Alex Brychta's unique style of artwork enthralls and entertains children, and the fresh new look will heighten their pleasure in reading the stories. With freshly drawn artwork for all the favorite core stories at Stages 2 - 5 and fantastic new covers, "Oxford Reading Tree" is more appealing than ever! Stories children love - The "Oxford Reading Tree" stories have always captivated children's imagination, inspiring them to read - and the stories and characters in the new editions haven't changed at all. Apart, that is, from an exciting new story at Stage 3, "The Egg Hunt", which replaces the "Dolphin Pool". Simplified structure - We have also simplified the structure of the scheme in response to feedback from you: "Owls" Storybooks become Stages 6 and 7 Storybooks; "Magpies" become Stages 8 and 9 Storybooks; "Wrens" at Stages 2 have become patterned stories at Stages 1+ and Stage 2; and "Wrens" at Stage 3 are now patterned stories at Stage 2. New teaching support material - In addition to the existing guided reading cards, perfect for use in guided reading sessions, we have brought out new teaching materials to reflect the needs of teachers in today's classroom: flexible, friendly teacher's notes included free with each pack of "Oxford Reading Tree" books - these are easy to store and will save you hours of preparation!; new Take-Home cards for every Storybook from Stages 1 - 9 to help parents or carers get the most out of reading with their child; free resources website with downloadable photocopy masters; and new "Teacher's Handbook" and special edition for Scotland.</span>
+                        <div class="cover">
+                            <img src="../images/B8440C09-7A38-4BE4-ABC8-9C59D9506AEC-140.png" onclick="showDetails(this, event)" alt="" style="max-width: 110px; max-height: 110px" />
+                        </div>
+                    </div>
+                    <div class="medium">
+                        <div class="title">Oxford Reading Tree: Stage 4: Storybooks: the Storm</div>
+                        <span class="creator">Roderick Hunt</span>
+                        <span class="rating"></span>
+                        <span class="asin">019845158X</span>
+                        <span class="description">"Oxford Reading Tree" remains the nation's favorite reading scheme and countless children have learnt to read with Biff, Chip, and Kipper. We are delighted to unveil its fresh new look for today's children, teachers and parents, with lively new covers and fresh artwork. Engaging new artwork and covers - Alex Brychta's unique style of artwork enthralls and entertains children, and the fresh new look will heighten their pleasure in reading the stories. With freshly drawn artwork for all the favorite core stories at Stages 2 - 5 and fantastic new covers, "Oxford Reading Tree" is more appealing than ever! Stories children love - The "Oxford Reading Tree" stories have always captivated children's imagination, inspiring them to read - and the stories and characters in the new editions haven't changed at all. Apart, that is, from an exciting new story at Stage 3, "The Egg Hunt", which replaces the "Dolphin Pool". Simplified structure - We have also simplified the structure of the scheme in response to feedback from you: "Owls" Storybooks become Stages 6 and 7 Storybooks; "Magpies" become Stages 8 and 9 Storybooks; "Wrens" at Stages 2 have become patterned stories at Stages 1+ and Stage 2; and "Wrens" at Stage 3 are now patterned stories at Stage 2. New teaching support material - In addition to the existing guided reading cards, perfect for use in guided reading sessions, we have brought out new teaching materials to reflect the needs of teachers in today's classroom: flexible, friendly teacher's notes included free with each pack of "Oxford Reading Tree" books - these are easy to store and will save you hours of preparation!; new Take-Home cards for every Storybook from Stages 1 - 9 to help parents or carers get the most out of reading with their child; free resources website with downloadable photocopy masters; and new "Teacher's Handbook" and special edition for Scotland.</span>
+                        <div class="cover">
+                            <img src="../images/327CCBBE-5612-4A41-AB5E-A7779184C55A-140.png" onclick="showDetails(this, event)" alt="" style="max-width: 110px; max-height: 110px" />
+                        </div>
+                    </div>
+                    <div class="medium">
+                        <div class="title">A present for Santa</div>
+                        <span class="creator">John Patience</span>
+                        <span class="rating"></span>
+                        <span class="asin">0710510608</span>
+                        <span class="description"></span>
+                        <div class="cover">
+                            <img src="../images/A37D7677-8EBB-46AF-A22E-EAA4281E17C6-140.png" onclick="showDetails(this, event)" alt="" style="max-width: 110px; max-height: 110px" />
+                        </div>
+                    </div>
+                    <div class="medium">
+                        <div class="title">Pretty Star the Pony</div>
+                        <span class="creator">Enid Blyton</span>
+                        <span class="rating"></span>
+                        <span class="asin">1841354597</span>
+                        <span class="description"></span>
+                        <div class="cover">
+                            <img src="../images/0A671538-91AA-4F67-B90E-118E51571A9B-140.png" onclick="showDetails(this, event)" alt="" style="max-width: 110px; max-height: 110px" />
+                        </div>
+                    </div>
+                    <div class="medium">
+                        <div class="title">Puss in Boots</div>
+                        <span class="creator">Fran Hunia</span>
+                        <span class="rating"></span>
+                        <span class="asin">0721404847</span>
+                        <span class="description"></span>
+                        <div class="cover">
+                            <img src="../images/72E4E7F4-7DDC-460B-A579-BDE8139CEE2F-140.png" onclick="showDetails(this, event)" alt="" style="max-width: 110px; max-height: 110px" />
+                        </div>
+                    </div>
+                    <div class="medium">
+                        <div class="title">Reading 2000: "With a Little Help from Your Friends", "Nothing to be Scared of", "Happy Returns" and "Freedom Calls" Level 1, Partners</div>
+                        <span class="creator">Catherine Allan, etc.</span>
+                        <span class="rating"></span>
+                        <span class="asin">0050044931</span>
+                        <span class="description">Reading 2000 is a five level language development programme, based around fiction, non-fiction and poetry. Listening, speaking, reading and writing are closely interwoven, and thematically based, cross curricular activities have been integrated into each level. The Reading 2000 Partners are thematic anthologies providing extension material for home or class. Suggestions for pre-reading activities, discussion and related language, writing and art work are included.</span>
+                        <div class="cover">
+                            <img src="../images/D5654674-28DE-431A-95A1-8934B999B547-140.png" onclick="showDetails(this, event)" alt="" style="max-width: 110px; max-height: 110px" />
+                        </div>
+                    </div>
+                    <div class="medium">
+                        <div class="title">Rupert and the Sleepy Imp</div>
+                        <span class="creator"></span>
+                        <span class="rating"></span>
+                        <span class="asin">0850792266</span>
+                        <span class="description"></span>
+                        <div class="cover">
+                            <img src="../images/6C432F95-4E6D-4F68-85B4-470F352921B0-140.png" onclick="showDetails(this, event)" alt="" style="max-width: 110px; max-height: 110px" />
+                        </div>
+                    </div>
+                    <div class="medium">
+                        <div class="title">Scholastic Q &amp; A: How Do Bats See In The Dark?</div>
+                        <span class="creator">Melvin Berger, Gilda Berger</span>
+                        <span class="rating"></span>
+                        <span class="asin">0439229049</span>
+                        <span class="description">From simple questions like "What do bats eat?" to more complex ones like "Why do fireflies glow?", this book delivers the answers kids want in a conversational format that's easy to understand.<br />
+                            <br />
+                            Q: How do bats see in the dark?<br />
+                            A: With their ears!<br />
+                            <br />
+                            In this wonderful introduction to nocturnal animals, kids will learn hundreds of facts about creatures of the night. Readers will find out that each kind of firefly has its own special signal, that cockroaches have been on Earth since the time of the dinosaurs, and that a litter of fourteen baby opossums will fit easily in a soup spoon!</span>
+                        <div class="cover">
+                            <img src="../images/858B8F64-E2CA-4C5C-8357-6DDB5188AE14-140.png" onclick="showDetails(this, event)" alt="" style="max-width: 110px; max-height: 110px" />
+                        </div>
+                    </div>
+                    <div class="medium">
+                        <div class="title">School Tables</div>
+                        <span class="creator"></span>
+                        <span class="rating"></span>
+                        <span class="asin">8174781242</span>
+                        <span class="description"></span>
+                        <div class="cover">
+                            <img src="../images/FD200D89-0205-41C1-B5EB-E505478DE29E-140.png" onclick="showDetails(this, event)" alt="" style="max-width: 110px; max-height: 110px" />
+                        </div>
+                    </div>
+                    <div class="medium">
+                        <div class="title">Sleeping Beauty</div>
+                        <span class="creator">Alison Ainsworth</span>
+                        <span class="rating"></span>
+                        <span class="asin">0721408559</span>
+                        <span class="description"></span>
+                        <div class="cover">
+                            <img src="../images/874F4E14-1FC9-411F-A5AA-2A7F39EFE350-140.png" onclick="showDetails(this, event)" alt="" style="max-width: 110px; max-height: 110px" />
+                        </div>
+                    </div>
+                    <div class="medium">
+                        <div class="title">Snowy</div>
+                        <span class="creator">Berlie Doherty</span>
+                        <span class="rating"></span>
+                        <span class="asin">0006642977</span>
+                        <span class="description">Rachel lives on a barge. When her teacher asks the class to bring pets to school, Rachel's parents forbid her to take Snowy, because he's a working horse, but then a school outing to the barge is arranged, so everyone can meet him. Berlie Doherty has twice won the Carnegie Medal.</span>
+                        <div class="cover">
+                            <img src="../images/1809427B-AFCA-431A-BA12-FBCC888921CA-140.png" onclick="showDetails(this, event)" alt="" style="max-width: 110px; max-height: 110px" />
+                        </div>
+                    </div>
+                    <div class="medium">
+                        <div class="title">Surrounded by the Cross Fire</div>
+                        <span class="creator">Peter Reese Doyle</span>
+                        <span class="rating"></span>
+                        <span class="asin">1561792586</span>
+                        <span class="description">ECB-28</span>
+                        <div class="cover">
+                            <img src="../images/7758636B-30D4-465B-BE20-C575ABD87C78-140.png" onclick="showDetails(this, event)" alt="" style="max-width: 110px; max-height: 110px" />
+                        </div>
+                    </div>
+                    <div class="medium">
+                        <div class="title">Test Your Child Hb</div>
+                        <span class="creator">Miriam Stoppard</span>
+                        <span class="rating"></span>
+                        <span class="asin">0863186009</span>
+                        <span class="description">This is a practical child development book that contains a range of simple home tests that parents can perform to assure themselves of their child's normal development. The book offers advice on what steps to take if the results are not what you expected. It also shows the role played by parents in their child's emotional and intellectual development and aims to help parents meet this challenge with confidence. "Test Your Child" sets out the ways parents may help their children to assume independence, increase imagination, overcome dislikes, foster sociability and seek individuality. It also looks at the various ways a child has of playing and discusses what toys and games to provide for your child. The book is designed to help parents to deal with problematic behaviour such as crying or tantrums in children up to five years old.</span>
+                        <div class="cover">
+                            <img src="../images/10C91CA7-C688-43DF-A21C-1143AE285900-140.png" onclick="showDetails(this, event)" alt="" style="max-width: 110px; max-height: 110px" />
+                        </div>
+                    </div>
+                    <div class="medium">
+                        <div class="title">The Thief</div>
+                        <span class="creator">Nancy Rue</span>
+                        <span class="rating"></span>
+                        <span class="asin">1561794791</span>
+                        <span class="description">Thomas's life becomes complicated when a strong, 15-year-old Scottish servant named Malcolm comes to live with the Hutchinsons. Not only is he the first boy to ever beat Thomas in a brawl, but Caroline seems to like him, as well! Meanwhile, the heated anger between the Loyalists and the Patriots about to boil over. When the horses of the Patriots begin to disappear, it seems pretty obvious who's behind the thievery. Or is it? While on a picnic, Malcolm, Caroline, and Thomas encounter the masked rider in the woods, and it may cost Malcolm his life! Can Thomas save Malcolm before he bleeds to death? Who is the man behind the mysterious mask? Are some things just plain wrong no matter whose side you're on?<br />
+                            <br />
+                            The Christian Heritage Series is an ongoing line of youth books that explore the role of faith and family throughout American history. These engaging stories help young readers better understand their country, its values, and its God. The Williamsburg Years books take place in early 1780s Virginia.<br />
+                            <br />
+                            Nancy Rue's writings have appeared in a variety of youth publications, including Clubhouse, Campus Life, and Teens Today. She has won a number of literary honors, including the 1991 C.S. Lewis Honor Book Award.</span>
+                        <div class="cover">
+                            <img src="../images/020B74FE-B1AE-4867-BA7A-143F84E541CF-140.png" onclick="showDetails(this, event)" alt="" style="max-width: 110px; max-height: 110px" />
+                        </div>
+                    </div>
+                    <div class="medium">
+                        <div class="title">THINGS THAT ARE MOST IN THE WORLD</div>
+                        <span class="creator">JUDI BARRETT</span>
+                        <span class="rating"></span>
+                        <span class="asin">043913353X</span>
+                        <span class="description"></span>
+                        <div class="cover">
+                            <img src="../images/3EFF674D-32B9-4249-8443-0A8584BC62A2-140.png" onclick="showDetails(this, event)" alt="" style="max-width: 110px; max-height: 110px" />
+                        </div>
+                    </div>
+                    <div class="medium">
+                        <div class="title">Thomas 14 Little Old Engine</div>
+                        <span class="creator">Rev W Awdry</span>
+                        <span class="rating"></span>
+                        <span class="asin">0434927910</span>
+                        <span class="description">Sir Handel's thoughtlessness causes Peter Sam to have an accident, Skarloey returns and he and Rusty each rescue Duncan after he makes foolish mistakes, then a television crew comes to film them all.</span>
+                        <div class="cover">
+                            <img src="../images/BD963FDD-9B9D-4DA7-948C-526E7E25499A-140.png" onclick="showDetails(this, event)" alt="" style="max-width: 110px; max-height: 110px" />
+                        </div>
+                    </div>
+                    <div class="medium">
+                        <div class="title">The Wedding</div>
+                        <span class="creator">Wendy Green</span>
+                        <span class="rating"></span>
+                        <span class="asin">074591554X</span>
+                        <span class="description"></span>
+                        <div class="cover">
+                            <img src="../images/1D207EC7-EE5E-44A0-8F40-E6BC8EA93AAD-140.png" onclick="showDetails(this, event)" alt="" style="max-width: 110px; max-height: 110px" />
+                        </div>
+                    </div>
+                    <div class="medium">
+                        <div class="title">When God Made Adam and Eve</div>
+                        <span class="creator">David Hately</span>
+                        <span class="rating"></span>
+                        <span class="asin">0721409857</span>
+                        <span class="description"></span>
+                        <div class="cover">
+                            <img src="../images/1F8C774E-15B7-4D5F-9E0E-5FE8BE24AB59-140.png" onclick="showDetails(this, event)" alt="" style="max-width: 110px; max-height: 110px" />
+                        </div>
+                    </div>
+                    <div class="medium">
+                        <div class="title">Winnie the Pooh and the Blustery Day</div>
+                        <span class="creator">Walt Disney</span>
+                        <span class="rating"></span>
+                        <span class="asin">0721408737</span>
+                        <span class="description">ECB-06</span>
+                        <div class="cover">
+                            <img src="../images/D7B79509-C724-4225-96D4-F4B03BE85222-140.png" onclick="showDetails(this, event)" alt="" style="max-width: 110px; max-height: 110px" />
+                        </div>
+                    </div>
+                </td>
+            </tr>
+        </table>
+        <div id="details" onclick="hideDetails()">
+            <div id="detailscover"></div>
+            <div id="detailsheader">
+                <div id="detailstitle"></div>
+                <div id="detailscreator"></div>
+                <hr />
+            </div>
+            <div id="detailsbody"></div>
+            <div id="detailsfooter">
+                <hr />
+                <a id="searchinsideanchor" href="#">
+                    <img id="searchinside" src="../images/searchinside.png" alt="Search Inside" />
+                </a>
+            </div>
+        </div>
+        <!-- end details -->
+    </body>
+</html>

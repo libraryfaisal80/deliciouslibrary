@@ -1,0 +1,83 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes"?>
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Strict//EN"
+    "http://www.w3.org/TR/xhtml1/DTD/xhtml1-strict.dtd">
+
+<html xmlns="http://www.w3.org/1999/xhtml">
+    <head>
+        <meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+        <meta id="viewport" name="viewport" content="width=320; initial-scale=0.9; maximum-scale=0.9; user-scalable=no;" />
+        <title>Library</title>
+        <link rel="stylesheet" href="style.css" type="text/css" />
+        <script type="text/javascript" src="prototype.js"></script>
+        <script type="text/javascript" src="animator.js"></script>
+        <script type="text/javascript" src="library.js"></script>
+    </head>
+    <body>
+        <div id="libraryheader" style="width: 100%; height: 88px; background: url(../images/shelfheader.jpg)">
+            <div id="librarybanner">Library</div>
+            <div id="shelfnavigation">
+            <select class="shelf_selection" onchange="location.href = this.options[this.selectedIndex].value;"><option value="index.html" selected="selected">AudioBooks</option><option value="englisheducational.html" >English Educational</option><option value="englishnovels.html" >English Novels</option><option value="finance.html" >Finance</option><option value="kidsmovies.html" >Kids Movies</option><option value="kidssection.html" >Kids Section</option><option value="itunesaudiobooks.html" >iTunes Audiobooks</option></select>
+        </div>
+        </div>
+        <table id="mediatable" border="0" cellspacing="0" cellpadding="0" style="width: 100%; background-image: url(../images/shelfpattern.png)">
+            <tr id="collection">
+                <td>
+                    <div class="medium">
+                        <div class="title">Chasing Life: New Discoveries in the Search for Immortality to Help You Age Less Today</div>
+                        <span class="creator">Sanjay Gupta</span>
+                        <span class="rating"></span>
+                        <span class="asin">1594838801</span>
+                        <span class="description">For centuries, adventurers and scientists have believed that not only could we delay death but that "practical immortality" was within our reach. Today, many well-respected researchers would be inclined to agree. In a book that is not about anti-aging, but about functional aging—extending your healthy, active life—Dr. Sanjay Gupta blends together compelling stories of the most up-to-date scientific breakthroughs from around the world, with cutting-edge research and advice on achieving practical immortality in this lifetime. Gupta's advice is often counterintuitive: longevity is not about eating well, but about eating less; nutritional supplements are a waste of your money; eating chocolate and drinking coffee can make you healthier. CHASING LIFE tells the stories behind the breakthroughs while also revealing the practical steps readers can take to help extend youth and life far longer than ever thought possible.</span>
+                        <div class="cover">
+                            <img src="../images/1260AB9D-C91C-400A-8361-2FD6EC42E31E-140.png" onclick="showDetails(this, event)" alt="" style="max-width: 110px; max-height: 110px" />
+                        </div>
+                    </div>
+                    <div class="medium">
+                        <div class="title">Freakonomics: A Rogue Economist Explores the Hidden Side of Everything</div>
+                        <span class="creator">Steven D. Levitt, Stephen J. Dubner</span>
+                        <span class="rating"></span>
+                        <span class="asin">0060776137</span>
+                        <span class="description">Which is more dangerous, a gun or a swimming pool? What do schoolteachers and sumo wrestlers have in common? Why do drug dealers still live with their moms? How much do parents really matter? What kind of impact did Roe v. Wade have on violent crime?<br />
+                            <br />
+                            These may not sound like typical questions for an economist to ask. But Steven D. Levitt is not a typical economist. He is a much-heralded scholar who studies the riddles of everyday life — from cheating and crime to sports and child rearing — and whose conclusions regularly turn the conventional wisdom on its head. Thus the new field of study contained in this book: Freakonomics.<br />
+                            <br />
+                            Levitt and co-author Stephen J. Dubner show that economics is, at root, the study of incentives — how people get what they want or need especially when other people want or need the same thing. In Freakonomics, they set out to explore the hidden side of ... well, everything. The inner workings of a crack gang. The truth about real-estate agents. The secrets of the Ku Klux Klan.<br />
+                            <br />
+                            What unites all these stories is a belief that the modern world is even more intriguing than we think. All it takes is a new way of looking. Steven Levitt, through devilishly clever and clear-eyed thinking, shows how to see through all the clutter.<br />
+                            <br />
+                            Read by Stephen J. Dubner</span>
+                        <div class="cover">
+                            <img src="../images/1F01F413-C82C-4F4C-B8A8-18FA5826B1B4-140.png" onclick="showDetails(this, event)" alt="" style="max-width: 110px; max-height: 110px" />
+                        </div>
+                    </div>
+                    <div class="medium">
+                        <div class="title">The Snowball: Warren Buffett and the Business of Life</div>
+                        <span class="creator">A. Schroeder</span>
+                        <span class="rating"></span>
+                        <span class="asin">0747596492</span>
+                        <span class="description"></span>
+                        <div class="cover">
+                            <img src="../images/5DCB4947-BFF7-4450-9220-C679012995E2-140.png" onclick="showDetails(this, event)" alt="" style="max-width: 110px; max-height: 110px" />
+                        </div>
+                    </div>
+                </td>
+            </tr>
+        </table>
+        <div id="details" onclick="hideDetails()">
+            <div id="detailscover"></div>
+            <div id="detailsheader">
+                <div id="detailstitle"></div>
+                <div id="detailscreator"></div>
+                <hr />
+            </div>
+            <div id="detailsbody"></div>
+            <div id="detailsfooter">
+                <hr />
+                <a id="searchinsideanchor" href="#">
+                    <img id="searchinside" src="../images/searchinside.png" alt="Search Inside" />
+                </a>
+            </div>
+        </div>
+        <!-- end details -->
+    </body>
+</html>

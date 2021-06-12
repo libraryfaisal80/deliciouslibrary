@@ -1,0 +1,89 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes"?>
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Strict//EN"
+    "http://www.w3.org/TR/xhtml1/DTD/xhtml1-strict.dtd">
+
+<html xmlns="http://www.w3.org/1999/xhtml">
+    <head>
+        <meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+        <meta id="viewport" name="viewport" content="width=320; initial-scale=0.9; maximum-scale=0.9; user-scalable=no;" />
+        <title>Library</title>
+        <link rel="stylesheet" href="style.css" type="text/css" />
+        <script type="text/javascript" src="prototype.js"></script>
+        <script type="text/javascript" src="animator.js"></script>
+        <script type="text/javascript" src="library.js"></script>
+    </head>
+    <body>
+        <div id="libraryheader" style="width: 100%; height: 88px; background: url(../images/shelfheader.jpg)">
+            <div id="librarybanner">Library</div>
+            <div id="shelfnavigation">
+            <select class="shelf_selection" onchange="location.href = this.options[this.selectedIndex].value;"><option value="index.html" >AudioBooks</option><option value="englisheducational.html" >English Educational</option><option value="englishnovels.html" >English Novels</option><option value="finance.html" >Finance</option><option value="kidsmovies.html" selected="selected">Kids Movies</option><option value="kidssection.html" >Kids Section</option><option value="itunesaudiobooks.html" >iTunes Audiobooks</option></select>
+        </div>
+        </div>
+        <table id="mediatable" border="0" cellspacing="0" cellpadding="0" style="width: 100%; background-image: url(../images/shelfpattern.png)">
+            <tr id="collection">
+                <td>
+                    <div class="medium">
+                        <div class="title">The Wizard Of OZ</div>
+                        <span class="creator"></span>
+                        <span class="rating"></span>
+                        <span class="asin">B000OV3GWE</span>
+                        <span class="description">2 Fantastic Episodes : A star is Gone &amp; Dream a Little Dream</span>
+                        <div class="cover">
+                            <img src="../images/51118B7C-9AF8-4A28-AFD4-C52E19890F28-140.png" onclick="showDetails(this, event)" alt="" style="max-width: 110px; max-height: 110px" />
+                        </div>
+                    </div>
+                    <div class="medium">
+                        <div class="title">Revenge Of The Nerds Ii [DVD]</div>
+                        <span class="creator"></span>
+                        <span class="rating"></span>
+                        <span class="asin">B0009KKWC2</span>
+                        <span class="description"></span>
+                        <div class="cover">
+                            <img src="../images/0147D6CB-A2C0-4354-9E2D-A76C608D940E-140.png" onclick="showDetails(this, event)" alt="" style="max-width: 110px; max-height: 110px" />
+                        </div>
+                    </div>
+                    <div class="medium">
+                        <div class="title">Favourites Teletubbies Favourite Games</div>
+                        <span class="creator">Avanquest Software</span>
+                        <span class="rating"></span>
+                        <span class="asin">B00006LA8W</span>
+                        <span class="description">Crafted with brilliant colours and the lazy-summer-day pace of the celebrated series, Teletubbies 2: Favourite Games delivers the goods for the toddler set. From the first scene, where the baby-face sun rises across the computer screen, kids will be entranced. Parents will like it too—mostly for the developmental skills the teletubbies teach.<br />
+                            <br />
+                            The CD-ROM is based around five games, including "Tuning In," "Gymnastic," and "Making Tubby Custard" (which features appropriately silly sound effects). "Hide and Peep" takes the traditional hide and seek game and adds bright red curtains. "Roly Poly" was a particular favourite; when you click on a teletubby it sends Laa-Laa, Tinky Winky, Dipsy, and Po rolling down gorgeous green hills.<br />
+                            <br />
+                            A very big pointer triggers the game's actions, and children should be able to use it easily in developing computer skills. These games also help children to learn how to match (from the hiding game) and create ordered sequences (in the case of the custard game). In addition, the game designers have built in considerate additions for the recommended age group, two to four years old. For example, to quit the game parents need to hit the escape key—a good choice for little fingers that might otherwise click an exit icon by mistake. Charming and colourful—like the television show come to life—Teletubbies 2: Favourite Games will please and delight. —Simon Priestly</span>
+                        <div class="cover">
+                            <img src="../images/EF5461BF-FB68-4341-8482-634A4C51D6C9-140.png" onclick="showDetails(this, event)" alt="" style="max-width: 110px; max-height: 110px" />
+                        </div>
+                    </div>
+                    <div class="medium">
+                        <div class="title">Barney: It's Time for Counting</div>
+                        <span class="creator">Laura Cargile</span>
+                        <span class="rating"></span>
+                        <span class="asin">B000E8N8JI</span>
+                        <span class="description">51 min. Widescreen; Soundtrack: English Dolby Digital stereo; Subtitles: English; bonus episode "A Counting We Will Go."</span>
+                        <div class="cover">
+                            <img src="../images/0FBB9069-F004-49D6-8D54-BD60F19F885F-140.png" onclick="showDetails(this, event)" alt="" style="max-width: 110px; max-height: 110px" />
+                        </div>
+                    </div>
+                </td>
+            </tr>
+        </table>
+        <div id="details" onclick="hideDetails()">
+            <div id="detailscover"></div>
+            <div id="detailsheader">
+                <div id="detailstitle"></div>
+                <div id="detailscreator"></div>
+                <hr />
+            </div>
+            <div id="detailsbody"></div>
+            <div id="detailsfooter">
+                <hr />
+                <a id="searchinsideanchor" href="#">
+                    <img id="searchinside" src="../images/searchinside.png" alt="Search Inside" />
+                </a>
+            </div>
+        </div>
+        <!-- end details -->
+    </body>
+</html>
