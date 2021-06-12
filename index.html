@@ -1,0 +1,120 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes"?>
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.1//EN" "http://www.w3.org/TR/xhtml11/DTD/xhtml11.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+    <head>
+        <meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+        <meta name="columns-per-page" content="1" />
+        <title>Library</title>
+        <script type="text/javascript">
+        if (!!navigator.userAgent.match(/iP*.*Mobile.*Safari/))
+            window.location.pathname = window.location.pathname.substr(0, window.location.pathname.lastIndexOf("/")) + "/iphone/index.html";
+        </script>
+        <link rel="stylesheet" href="style.css" type="text/css" />
+        <script src="prototype.js" type="text/javascript"></script>
+        <script src="animator.js" type="text/javascript"></script>
+        <script src="library.js" type="text/javascript"></script>
+    </head>
+    <body onload="initialize()">
+        <div id="details" class="details_hidden">
+            <div id="details_top">
+                <div id="drag_handle">&#8212;</div>
+                <div id="rating"></div>
+                <div id="title"></div>
+                <div id="creator"></div>
+            </div>
+            <div id="description"></div>
+        </div>
+        <div id="container">
+            <div id="overlay"></div>
+            <div id="header">
+                <div id="header_cap"></div>
+            </div>
+            <div id="collection_info_section">
+                <img src="images/library.png" id="librarybanner" alt="Library" />
+                <div id="collection_info">
+                    <div id="user_image">
+                        <img src="images/CD7271F4-09F8-4014-8EA5-D694C993E918.png" alt="" />
+                    </div>
+                    <div id="user_name">My Library</div>
+                    <div id="stats">
+                        <div id="total">Collection Total:<br />
+                            <span style="font-weight: bold">199 Items</span>
+                        </div>
+                        <div id="updated">Last Updated:<br />
+                            <span style="font-weight: bold">Sep 29, 2012</span>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div id="content">
+                <div id="collection">
+                    <div id="media" onclick="deselect();">
+                        <table>
+                            <tbody>
+                                <tr>
+                                    <td>
+                                        <div class="medium">
+                                            <div class="title">Chasing Life: New Discoveries in the Search for Immortality to Help You Age Less Today</div>
+                                            <div class="cover" onclick="showDetails(this, event)">
+                                                <img src="images/1260AB9D-C91C-400A-8361-2FD6EC42E31E-140.png" alt="" />
+                                            </div>
+                                            <span class="creator">Sanjay Gupta</span>
+                                            <span class="rating"></span>
+                                            <span class="description">For centuries, adventurers and scientists have believed that not only could we delay death but that "practical immortality" was within our reach. Today, many well-respected researchers would be inclined to agree. In a book that is not about anti-aging, but about functional aging—extending your healthy, active life—Dr. Sanjay Gupta blends together compelling stories of the most up-to-date scientific breakthroughs from around the world, with cutting-edge research and advice on achieving practical immortality in this lifetime. Gupta's advice is often counterintuitive: longevity is not about eating well, but about eating less; nutritional supplements are a waste of your money; eating chocolate and drinking coffee can make you healthier. CHASING LIFE tells the stories behind the breakthroughs while also revealing the practical steps readers can take to help extend youth and life far longer than ever thought possible.</span>
+                                        </div>
+                                        <div class="medium">
+                                            <div class="title">Freakonomics: A Rogue Economist Explores the Hidden Side of Everything</div>
+                                            <div class="cover" onclick="showDetails(this, event)">
+                                                <img src="images/1F01F413-C82C-4F4C-B8A8-18FA5826B1B4-140.png" alt="" />
+                                            </div>
+                                            <span class="creator">Steven D. Levitt, Stephen J. Dubner</span>
+                                            <span class="rating"></span>
+                                            <span class="description">Which is more dangerous, a gun or a swimming pool? What do schoolteachers and sumo wrestlers have in common? Why do drug dealers still live with their moms? How much do parents really matter? What kind of impact did Roe v. Wade have on violent crime?<br />
+                                                <br />
+                                                These may not sound like typical questions for an economist to ask. But Steven D. Levitt is not a typical economist. He is a much-heralded scholar who studies the riddles of everyday life — from cheating and crime to sports and child rearing — and whose conclusions regularly turn the conventional wisdom on its head. Thus the new field of study contained in this book: Freakonomics.<br />
+                                                <br />
+                                                Levitt and co-author Stephen J. Dubner show that economics is, at root, the study of incentives — how people get what they want or need especially when other people want or need the same thing. In Freakonomics, they set out to explore the hidden side of ... well, everything. The inner workings of a crack gang. The truth about real-estate agents. The secrets of the Ku Klux Klan.<br />
+                                                <br />
+                                                What unites all these stories is a belief that the modern world is even more intriguing than we think. All it takes is a new way of looking. Steven Levitt, through devilishly clever and clear-eyed thinking, shows how to see through all the clutter.<br />
+                                                <br />
+                                                Read by Stephen J. Dubner</span>
+                                        </div>
+                                        <div class="medium">
+                                            <div class="title">The Snowball: Warren Buffett and the Business of Life</div>
+                                            <div class="cover" onclick="showDetails(this, event)">
+                                                <img src="images/5DCB4947-BFF7-4450-9220-C679012995E2-140.png" alt="" />
+                                            </div>
+                                            <span class="creator">A. Schroeder</span>
+                                            <span class="rating"></span>
+                                            <span class="description"></span>
+                                        </div>
+                                    </td>
+                                </tr>
+                            </tbody>
+                        </table>
+                    </div>
+                    <!-- End media -->
+                </div>
+                <!-- End collection -->
+                <div id="sidebar">
+                    <div class="navigation_header"></div>
+                    
+                    <div class="shelf_selection"><a class="shelf selected" href="index.html">AudioBooks</a><a class="shelf" href="englisheducational.html">English Educational</a><a class="shelf" href="englishnovels.html">English Novels</a><a class="shelf" href="finance.html">Finance</a><a class="shelf" href="kidsmovies.html">Kids Movies</a><a class="shelf" href="kidssection.html">Kids Section</a><a class="shelf" href="itunesaudiobooks.html">iTunes Audiobooks</a></div>
+                    <div class="navigation_footer"></div>
+                </div>
+                <!-- End sidebar -->
+                <div style="clear: both;"></div>
+            </div>
+            <!-- End content -->
+            <div id="footer">
+                <a href="http://www.delicious-monster.com">
+                    <img src="images/monster.png" alt="" />
+                     Made with Delicious Library
+                </a>
+                <p></p>
+            </div>
+            <!-- End footer -->
+        </div>
+        <!-- End container -->
+    </body>
+</html>
