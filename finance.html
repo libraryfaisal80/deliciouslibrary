@@ -1,20 +1,19 @@
-<?xml version="1.0" encoding="utf-8" standalone="yes"?>
-<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.1//EN" "http://www.w3.org/TR/xhtml11/DTD/xhtml11.dtd">
-<html xmlns="http://www.w3.org/1999/xhtml">
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.1//EN" "http://www.w3.org/TR/xhtml11/DTD/xhtml11.dtd"><html xmlns="http://www.w3.org/1999/xhtml">
     <head>
-        <meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
-        <meta name="columns-per-page" content="1" />
+        <meta http-equiv="Content-Type" content="text/html; charset=utf-8">
+        <meta name="columns-per-page" content="1">
         <title>Library</title>
         <script type="text/javascript">
         if (!!navigator.userAgent.match(/iP*.*Mobile.*Safari/))
             window.location.pathname = window.location.pathname.substr(0, window.location.pathname.lastIndexOf("/")) + "/iphone/index.html";
         </script>
-        <link rel="stylesheet" href="style.css" type="text/css" />
+        <link rel="stylesheet" href="style.css" type="text/css">
         <script src="prototype.js" type="text/javascript"></script>
         <script src="animator.js" type="text/javascript"></script>
         <script src="library.js" type="text/javascript"></script>
     </head>
     <body onload="initialize()">
+        
         <div id="details" class="details_hidden">
             <div id="details_top">
                 <div id="drag_handle">&#8212;</div>
@@ -24,225 +23,54 @@
             </div>
             <div id="description"></div>
         </div>
+        
         <div id="container">
-            <div id="overlay"></div>
+            <div id="overlay">
+            </div>
             <div id="header">
                 <div id="header_cap"></div>
             </div>
             <div id="collection_info_section">
-                <img src="images/library.png" id="librarybanner" alt="Library" />
+                <img src="images/library.png" id="librarybanner" alt="Library">
                 <div id="collection_info">
-                    <div id="user_image">
-                        <img src="images/CD7271F4-09F8-4014-8EA5-D694C993E918.png" alt="" />
-                    </div>
-                    <div id="user_name">My Library</div>
+                    <div id="user_image"><img src="covers/6862428B-EDD6-4C91-AF56-7B31A7DDAEE2.png" alt=""></div>
+                    <div id="user_name">2021 website</div>
                     <div id="stats">
-                        <div id="total">Collection Total:<br />
-                            <span style="font-weight: bold">199 Items</span>
-                        </div>
-                        <div id="updated">Last Updated:<br />
-                            <span style="font-weight: bold">Sep 29, 2012</span>
-                        </div>
-                    </div>
+        	           <div id="total">Collection Total:<br><span style="font-weight: bold">40 Items</span></div>
+            	       <div id="updated">Last Updated:<br><span style="font-weight: bold">Jun 12, 2021</span></div>
+        	       </div>
                 </div>
             </div>
             <div id="content">
+                
+                <div id="sidebar">
+                    <div class="navigation_header"></div>
+                    <div class="shelf_selection"><a class="shelf" href="index.html">Fiction</a><a class="shelf selected" href="finance.html">Finance</a><a class="shelf" href="nonfiction.html">Non-Fiction</a><a class="shelf" href="poetry.html">Poetry</a><a class="shelf" href="selfhelp.html">Self Help</a></div>
+                    <div class="navigation_footer"></div>
+                    <script type="text/javascript">fillInMediaIcons();</script> <!-- Do this immediately so we don't wait for like 7,000 media to load first -->
+                </div>  <!-- End sidebar -->
+
                 <div id="collection">
                     <div id="media" onclick="deselect();">
                         <table>
                             <tbody>
-                                <tr>
-                                    <td>
-                                        <div class="medium">
-                                            <div class="title">The Wolf of Wall Street: How Money Destroyed a Wall Street Superman</div>
-                                            <div class="cover" onclick="showDetails(this, event)">
-                                                <img src="images/DE71D796-112D-45E8-80E8-125EAB5E0CAD-140.png" alt="" />
-                                            </div>
-                                            <span class="creator">Jordan Belfort</span>
-                                            <span class="rating"></span>
-                                            <span class="description"></span>
-                                        </div>
-                                        <div class="medium">
-                                            <div class="title">Hedgehogging</div>
-                                            <div class="cover" onclick="showDetails(this, event)">
-                                                <img src="images/0B834495-C0D3-4A64-A12C-DA747A11F02F-140.png" alt="" />
-                                            </div>
-                                            <span class="creator">Barton Biggs</span>
-                                            <span class="rating"></span>
-                                            <span class="description">Rare is the opportunity to chat with a legendary financial figure and hear the unvarnished truth about what really goes on behind the scenes. Hedgehogging represents just such an opportunity, allowing you to step inside the world of Wall Street with Barton Biggs as he discusses investing in general, hedge funds in particular, and how he has learned to find and profit from the best moneymaking opportunities in an eat-what-you-kill, cutthroat investment world.</span>
-                                        </div>
-                                        <div class="medium">
-                                            <div class="title">Buffettology: The Previously Unexplained Techniques That Have Made Warren Buffett The Worlds</div>
-                                            <div class="cover" onclick="showDetails(this, event)">
-                                                <img src="images/F59953F5-67FE-429A-8102-FD3181846A07-140.png" alt="" />
-                                            </div>
-                                            <span class="creator">Mary Buffett, David Clark</span>
-                                            <span class="rating"></span>
-                                            <span class="description">HOW WARREN BUFFETT DID IT — AND HOW YOU CAN TOO<br />
-                                                <br />
-                                                In the world of investing, the name Warren Buffett is synonymous with success and prosperity. Building from the ground up, Buffett chose wisely and picked his stocks with care, in turn amassing the huge fortune for which he is now famous. Mary Buffett, former daughter-in-law of this legendary financial genius and a successful businesswoman in her own right, has teamed up with noted Buffettologist David Clark to create Buffettology, a one-of-a-kind investment guide that explains the winning strategies of the master.<br />
-                                                <br />
-                                                * Learn how to approach investing the way Buffett does, based on the authors' firsthand knowledge of the secrets that have made Buffett the world's second wealthiest man<br />
-                                                <br />
-                                                * Use Buffett's proven method of investing in stocks that will continue to grow over time<br />
-                                                <br />
-                                                * Master the straightforward mathematical equipments that assist Buffett in making investments<br />
-                                                <br />
-                                                * Examine the kinds of companies that capture Buffett's interest, and learn how you can use this information to make your own investment choices of the future<br />
-                                                <br />
-                                                Complete with profiles of fifty-four "Buffett companies" — companies in which Buffett has invested and which the authors believe he continues to follow — Buffettology can show any investor, from beginner to savvy pro, how to create a profitable portfolio.</span>
-                                        </div>
-                                        <div class="medium">
-                                            <div class="title">Warren Buffett and the Art of Stock Arbitrage: Proven Strategies for Arbitrage and Other Special Investment Situations</div>
-                                            <div class="cover" onclick="showDetails(this, event)">
-                                                <img src="images/4FEA0D3B-F0CF-4BBA-8C39-78E83B006318-140.png" alt="" />
-                                            </div>
-                                            <span class="creator">Mary Buffett, David Clark</span>
-                                            <span class="rating"></span>
-                                            <span class="description">FOR THE FIRST TIME EVER, DISCOVER HOW WARREN BUFFETT HAS MADE UNHEARD-OF PROFITS IN THE WORLD OF ARBITRAGE AND SPECIAL INVESTMENTS, AND HOW TO BE A PLAYER IN THESE VENTURES.<br />
-                                                <br />
-                                                Investors around the world recently learned that from 1980 through 2003 Warren Buffett’s arbitrage operations produced an astronomical average annualized rate of return of 81.28%. Even more amazing, this incredible rate of return was produced with very low rates of risk.<br />
-                                                <br />
-                                                Long considered one of the most powerful and profitable of Buffett’s investment operations, but the least understood, these special types of investments have been the edge that made Warren Buffett so phenomenally successful. Warren Buffett and the Art of Stock Arbitrage is the first book to examine Buffett’s special brand of arbitrage investing.<br />
-                                                <br />
-                                                Buffettologists Mary Buffett and David Clark explore the previously secret domain of Warren Buffett’s stock arbitrage investments. They explain how Buffett finds deals, evaluates them, picks the winners from the losers, and when he is willing to use leverage to help boost his performance in these investments to make amazing profits. Basic mathematical equations are included to help readers determine the projected rate of return, evaluate risk, and determine the probability of the deal being a success.<br />
-                                                <br />
-                                                Buffett and Clark provide detailed explanations and examples of Warren Buffett’s methods for arbitrage, and for investing in tender offers, liquidations, spin-offs, and reorganizations. They take readers step by step from the initial public announcement to tendering shares, explaining how Buffett evaluates risk and maximizes his profit at every step.<br />
-                                                <br />
-                                                 Warren Buffett and the Art of Stock Arbitrage is a valuable companion to the other books in Buffett and Clark’s successful series—Buffettology, The Buffettology Workbook, The New Buffettology, The Tao of Warren Buffett, Warren Buffett and the Interpretation of Financial Statements, and Warren Buffett’s Management Secrets.</span>
-                                        </div>
-                                        <div class="medium">
-                                            <div class="title">Built to Last: Successful Habits of Visionary Companies</div>
-                                            <div class="cover" onclick="showDetails(this, event)">
-                                                <img src="images/41603622-BCBB-4BFD-A0F9-769BE40E50F7-140.png" alt="" />
-                                            </div>
-                                            <span class="creator">Jim Collins, Jerry I. Porras</span>
-                                            <span class="rating"></span>
-                                            <span class="description">Drawing upon a six-year research project at the Stanford University Graduate School of Business, James C. Collins and Jerry I. Porras took eighteen truly exceptional and long-lasting companies and studied each in direct comparison to one of its top competitors. They examined the companies from their very beginnings to the present day — as start-ups, as midsize companies, and as large corporations. Throughout, the authors asked: "What makes the truly exceptional companies different from the comparison companies and what were the common practices these enduringly great companies followed throughout their history?"<br />
-                                                <br />
-                                                Filled with hundreds of specific examples and organized into a coherent framework of practical concepts that can be applied by managers and entrepreneurs at all levels, Built to Last provides a master blueprint for building organizations that will prosper long into the 21st century and beyond.</span>
-                                        </div>
-                                        <div class="medium">
-                                            <div class="title">Age Of Turbulence - Adventures In A New World</div>
-                                            <div class="cover" onclick="showDetails(this, event)">
-                                                <img src="images/0A7699FB-5003-4587-8878-48605DC85E1B-140.png" alt="" />
-                                            </div>
-                                            <span class="creator">ALAN GREENSPAN</span>
-                                            <span class="rating"></span>
-                                            <span class="description">2007 hardcover ex-library without writing but has usual library markings</span>
-                                        </div>
-                                        <div class="medium">
-                                            <div class="title">220 Best Franchises to Buy: The Essential Sourcebook for Evaluating the Best Franchise Opportunities</div>
-                                            <div class="cover" onclick="showDetails(this, event)">
-                                                <img src="images/F61C511D-3E9B-4AA6-A51D-C7C2F513013B-140.png" alt="" />
-                                            </div>
-                                            <span class="creator">The Philip Lief Group, Lynie Arden</span>
-                                            <span class="rating"></span>
-                                            <span class="description">Today's economic climate, dominated by corporate giants and chains, can be a tough place for a new face, but buying a franchise is the best opportunity for a budding entrepreneur. 220 Best Franchises to Buy, revised and updated with all-new franchise ideas, shows you how to get in on the ground floor—and how to reap the benefits of running your own business without running all the risks.<br />
-                                                Here are all the facts you need to make an informed decision about the franchise operation that best suits your professional goals, financial resources, and personal needs. The book features a step-by-step breakdown of potentially confusing areas such as financial responsibilities and licensing fees. You'll also learn about what kind of training and marketing to expect for your money, and how to negotiate a contract in your favor.<br />
-                                                This new edition of a business classic has been completely updated and revised to include franchise opportunities for the new millennium—everything from advertising to the fastest-growing chains of health clubs. With over fifty thousand copies in print, 220 Best Franchises to Buy is one of the most trusted sources of franchise information for today's entrepreneurs.</span>
-                                        </div>
-                                        <div class="medium">
-                                            <div class="title">Buffett: The Making of an American Capitalist</div>
-                                            <div class="cover" onclick="showDetails(this, event)">
-                                                <img src="images/F2DDAAE9-5666-418F-BC78-B487204A0A14-140.png" alt="" />
-                                            </div>
-                                            <span class="creator">Roger Lowenstein</span>
-                                            <span class="rating"></span>
-                                            <span class="description">Since its hardcover publication in August of 1995, Buffett has appeared on the Wall Street Journal, New York Times, San Francisco Chronicle, Los Angeles Times, Seattle Times, Newsday and Business Week bestseller lists. The incredible landmark portrait of Warren Buffett's uniquely American life is now available in paperback, revised and updated by the author.<br />
-                                                <br />
-                                                Starting from scratch, simply by picking stocks and companies for investment, Warren Buffett amassed one of the epochal fortunes of the twentieth century—an astounding net worth of $10 billion, and counting. His awesome investment record has made him a cult figure popularly known for his seeming contradictions: a billionaire who has a modest lifestyle, a phenomenally successful investor who eschews the revolving-door trading of modern Wall Street, a brilliant dealmaker who cultivates a homespun aura.<br />
-                                                <br />
-                                                Journalist Roger Lowenstein draws on three years of unprecedented access to Buffett's family, friends, and colleagues to provide the first definitive, inside account of the life and career of this American original. Buffett  explains Buffett's' investment strategy—a long-term philosophy grounded in buying stock in companies that are undervalued on the market and hanging on until their worth invariably surfaces—and shows how it is a reflection of his inner self.</span>
-                                        </div>
-                                        <div class="medium">
-                                            <div class="title">One up on Wall Street: How to Use What You Already Know to Make Money in the Market</div>
-                                            <div class="cover" onclick="showDetails(this, event)">
-                                                <img src="images/C1229306-20C5-466B-A340-845574B09BEB-140.png" alt="" />
-                                            </div>
-                                            <span class="creator">Peter Lynch, John Rothchild</span>
-                                            <span class="rating"></span>
-                                            <span class="description">In easy-to-follow terminology, Lynch offers directions for sorting out the long shots from the no shots by spending just a few minutes with a company's financial statements. His advice for producing "tenbaggers" can turn a stock portfolio into a star performer!</span>
-                                        </div>
-                                        <div class="medium">
-                                            <div class="title">Pilgrimage to Warren Buffett's Omaha: A Hedge Fund Manager's Dispatches from Inside the Berkshire Hathaway Annual Meeting</div>
-                                            <div class="cover" onclick="showDetails(this, event)">
-                                                <img src="images/036DD055-E42A-452B-B063-1B7EF1129D22-140.png" alt="" />
-                                            </div>
-                                            <span class="creator">Jeff Matthews</span>
-                                            <span class="rating"></span>
-                                            <span class="description">They come to Omaha by the tens of thousands, flocking to an annual meeting that has become legendary for investors, businesspeople, and fans of one of the most savvy capitalists on the planet. They come to eat steak, buy furniture at a discount, and bask in the brilliance of value investor extraordinaire, Warren Buffet.<br />
-                                                <br />
-                                                Hedge fund founder, financial blogger, and professional skeptic Jeff Matthews got his own highly-coveted ticket to the Berkshire Hathaway meeting held only for shareholders and their guests—and proceeded to post reports on his blog, offering tempting glimpses into the much-discussed meeting. Now Matthews delivers a full-length account of his adventures at this infamous financial hoedown. In addition to offering a thoroughly entertaining first-hand account of Berkshire Hathaway's meeting, he answers questions investor's are asking, including: Does Buffett's famed penny-pinching cripple his companies?Why does Buffet—a bridge partner and best friend of Bill Gates—not own any technology stocks?How does the extremely rational Buffett square his well-known social progressiveness with his lily-white audience of investors?Is Buffet really an "Oracle"?What information, insights, and ideas do the meeting's attendees pick up-and how do they put this information to use in their own investments?Will Berkshire-Hathaway survive his death?<br />
-                                                <br />
-                                                Matthews also applies his financial acumen to harvesting potent lessons from his experiences that you can use as you survey the investment field, from finding how the world’s greatest investor evaluates not only businesses but the people who run them, to the importance of “just reading and thinking” and the value of having a smart, cynical partner. With the dispatches from this exclusive financial carnival, Pilgrimage to Warren Buffett's Omaha puts you at the forefront of an investor's dream come true.<br />
-                                                <br />
-                                                "There are very few secrets to be revealed about a man who really doesn’t have many secrets. But this book does take you inside that secret place – the Mecca of the Midwest. It’s very easy to read and full of classic Buffett-isms – well worth the pilgrimage for those of us who don’t own any Berkshire Hathaway shares or for anyone who wants to learn more about investing from the man who says the first rule of investing it to, 'read everything.'"<br />
-                                                —CNBC.COM</span>
-                                        </div>
-                                        <div class="medium">
-                                            <div class="title">Fooled by Randomness: The Hidden Role of Chance in Life and in the Markets</div>
-                                            <div class="cover" onclick="showDetails(this, event)">
-                                                <img src="images/7CD3EFAD-A12D-4CA0-ADA0-DCE14E3CDDDF-140.png" alt="" />
-                                            </div>
-                                            <span class="creator">Nassim Nicholas Taleb</span>
-                                            <span class="rating"></span>
-                                            <span class="description">“[Taleb is] Wall Street’s principal dissident. . . . [Fooled By Randomness] is to conventional Wall Street wisdom approximately what Martin Luther’s ninety-nine theses were to the Catholic Church.”<br />
-                                                –Malcolm Gladwell, The New Yorker<br />
-                                                <br />
-                                                Finally in paperback, the word-of-mouth sensation that will change the way you think about the markets and the world.This book is about luck: more precisely how we perceive luck in our personal and professional experiences.<br />
-                                                <br />
-                                                Set against the backdrop of the most conspicuous forum in which luck is mistaken for skill–the world of business–Fooled by Randomness is an irreverent, iconoclastic, eye-opening, and endlessly entertaining exploration of one of the least understood forces in all of our lives.</span>
-                                        </div>
-                                        <div class="medium">
-                                            <div class="title">The Black Swan: The Impact of the Highly Improbable</div>
-                                            <div class="cover" onclick="showDetails(this, event)">
-                                                <img src="images/FEA5B49B-D82F-4F12-9A4B-F4AA0D22505B-140.png" alt="" />
-                                            </div>
-                                            <span class="creator">Nassim Nicholas Taleb</span>
-                                            <span class="rating"></span>
-                                            <span class="description">EE-34</span>
-                                        </div>
-                                        <div class="medium">
-                                            <div class="title">Wisdom on Value Investing: How to Profit on Fallen Angels</div>
-                                            <div class="cover" onclick="showDetails(this, event)">
-                                                <img src="images/3A7136F0-11F2-47BF-B415-7EED49ABB8F8-140.png" alt="" />
-                                            </div>
-                                            <span class="creator">Gabriel Wisdom</span>
-                                            <span class="rating"></span>
-                                            <span class="description">Wisdom on Value Investing offers author Gabriel Wisdom's insights on succeeding in difficult markets. One of his favorite approaches-which is part classic value investing and part behavioral finance-is called "The Fallen Angels Investment Strategy," and it prepares investors to look past short-term value assumptions in order to capture profits. Throughout this book, Wisdom will show you how to capitalize on value plays where the fundamentals are actually strong, but the "general wisdom" surrounding the security has turned negative. He discusses how stocks with the most promise are ones that Wall Street has marked down without regard to their underlying value, and reveals how this type of intrinsic value discount provides a margin of safety during difficult times, and substantial upside rewards for those who find them early enough.Takes value investing one step further by mixing significant amounts of behavioral finance into the analysisPrepares investors to take advantage of other's mistakesA time-tested strategy for any type of market-up or down<br />
-                                                <br />
-                                                A classic look at value investing with a twist, this book will put you in a better position to succeed in both bull and bear markets.<br />
-                                                <br />
-                                                Includes a Foreword by Mary Buffett and David Clark, authors of Buffettology.</span>
-                                        </div>
-                                    </td>
+                                <tr><td><div class="medium"><div class="title">The Oracle Speaks: Warren Buffett In His Own Words</div><div class="cover" onclick="showDetails(this, event)"><img class="coverimage" src="covers/23F390BE-0C8A-4243-9F18-1248ACF7602E-140.png" width="90" height="140"></div><span class="creator"></span><span class="rating"></span><span class="description"></span></div><div class="medium"><div class="title">The Complete Guide to Starting and Running a Bookshop</div><div class="cover" onclick="showDetails(this, event)"><img class="coverimage" src="covers/4FEA282C-9895-4C6B-871F-73EFF932538C-140.png" width="90" height="140"></div><span class="creator">Booksellers Association</span><span class="rating"></span><span class="description"></span></div><div class="medium"><div class="title">The Wolf of Wall Street: How Money Destroyed a Wall Street Superman</div><div class="cover" onclick="showDetails(this, event)"><img class="coverimage" src="covers/A4968509-4153-4D8B-9F69-C5C7CD54499A-140.png" width="92" height="140"></div><span class="creator">Jordan Belfort</span><span class="rating"></span><span class="description"></span></div><div class="medium"><div class="title">From Worst to First: Behind the Scenes of Continental's Remarkable Comeback</div><div class="cover" onclick="showDetails(this, event)"><img class="coverimage" src="covers/574F90A7-C32E-4346-ACE8-7E0E29B65F20-140.png" width="93" height="140"></div><span class="creator">Bethune, Gordon</span><span class="rating"></span><span class="description"></span></div><div class="medium"><div class="title">Buffettology: The Previously Unexplained Techniques That Have Made Warren Buffett The Worlds</div><div class="cover" onclick="showDetails(this, event)"><img class="coverimage" src="covers/39B51EFE-0945-46AA-B7CD-A5B8FB96CB79-140.png" width="91" height="140"></div><span class="creator">Buffett, Mary, Clark, David</span><span class="rating"></span><span class="description">Building from the ground up, Buffett chose wisely and picked his stocks with care, in turn amassing the huge fortune for which he is now famous. Mary Buffett, former daughter-in-law of this legendary financial genius and a successful businesswoman in her own right, has teamed up with noted Buffettologist David Clark to create Buffettology, a one-of-a-kind investment guide that explains the winning strategies of the master.<br><br>-Learn how to approach investing the way Buffett does, based on the authors' firsthand knowledge of the secrets that have made Buffett the world's second wealthiest man<br><br>-Use Buffett's proven method of investing in stocks that will continue to grow over time</span></div><div class="medium"><div class="title">The Tao of Warren Buffett</div><div class="cover" onclick="showDetails(this, event)"><img class="coverimage" src="covers/587F8EAE-C30D-4744-B387-50120F694815-140.png" width="91" height="140"></div><span class="creator">Buffett, Mary</span><span class="rating"></span><span class="description"></span></div><div class="medium"><div class="title">Warren Buffett and the Art of Stock Arbitrage: Proven Strategies for Arbitrage and Other Special Investment Situations</div><div class="cover" onclick="showDetails(this, event)"><img class="coverimage" src="covers/C2CE31A9-9337-44BA-9280-84CEC05A376B-140.png" width="105" height="140"></div><span class="creator">Buffett, Mary, Clark, David</span><span class="rating"></span><span class="description"></span></div><div class="medium"><div class="title">Keys to the Vault: Lessons From the Pros on Raising Money and Igniting Your Business</div><div class="cover" onclick="showDetails(this, event)"><img class="coverimage" src="covers/5704CB78-2507-4E80-9E0F-52B35DC1C367-140.png" width="114" height="140"></div><span class="creator">Keith J. Cunningham</span><span class="rating"></span><span class="description"></span></div><div class="medium"><div class="title">Narrative and Numbers: The Value of Stories in Business</div><div class="cover" onclick="showDetails(this, event)"><img class="coverimage" src="covers/90ED09F8-75B5-4290-9BDA-A4C5FEF317C8-140.png" width="92" height="140"></div><span class="creator">Aswath Damodaran</span><span class="rating"></span><span class="description"></span></div><div class="medium"><div class="title">Common Stocks and Uncommon Profits and Other Writings</div><div class="cover" onclick="showDetails(this, event)"><img class="coverimage" src="covers/9207AD16-0375-4383-8B21-5A0AA5BB0E58-140.png" width="94" height="140"></div><span class="creator">Fisher, Philip A.</span><span class="rating"></span><span class="description">Widely respected and admired, Philip Fisher is among the most influential investors of all time. His investment philosophies, introduced almost forty years ago, are not only studied and applied by today's financiers and investors, but are also regarded by many as gospel. This book is invaluable reading and has been since it was first published in 1958. The updated paperback retains the investment wisdom of the original edition and includes the perspectives of the author's son Ken Fisher, an investment guru in his own right in an expanded preface and introduction<br>"I sought out Phil Fisher after reading his Common Stocks and Uncommon Profits...A thorough understanding of the business, obtained by using Phil's techniques...enables one to make intelligent investment commitments."</span></div><div class="medium"><div class="title">The Intelligent Investor: The Classic Text on Value Investing</div><div class="cover" onclick="showDetails(this, event)"><img class="coverimage" src="covers/F4E2B1A6-15E3-43F2-97A5-73EA7A35EA5C-140.png" width="91" height="140"></div><span class="creator">Graham, Benjamin</span><span class="rating"></span><span class="description"></span></div><div class="medium"><div class="title">One Up On Wall Street: How To Use What You Already Know To Make Money In The Market</div><div class="cover" onclick="showDetails(this, event)"><img class="coverimage" src="covers/898877B4-5114-4181-8DE3-976C1C989311-140.png" width="91" height="140"></div><span class="creator">Lynch, Peter</span><span class="rating"></span><span class="description"></span></div><div class="medium"><div class="title">University of Berkshire Hathaway: 30 Years of Lessons Learned from Warren Buffett &amp; Charlie Munger at the Annual Shareholders Meeting</div><div class="cover" onclick="showDetails(this, event)"><img class="coverimage" src="covers/64E17B61-49C9-4D62-8956-E5E4FC0286E2-140.png" width="93" height="140"></div><span class="creator">Pecaut, Daniel</span><span class="rating"></span><span class="description"></span></div><div class="medium"><div class="title">The Snowball: Warren Buffett and the Business of Life</div><div class="cover" onclick="showDetails(this, event)"><img class="coverimage" src="covers/B9F0EC4C-16A6-412D-9AB7-D45EBB9C87FE-140.png" width="93" height="140"></div><span class="creator">Schroeder, Alice</span><span class="rating"></span><span class="description"></span></div></td>
                                 </tr>
                             </tbody>
                         </table>
-                    </div>
-                    <!-- End media -->
-                </div>
-                <!-- End collection -->
-                <div id="sidebar">
-                    <div class="navigation_header"></div>
-                    
-                    <div class="shelf_selection"><a class="shelf" href="index.html">AudioBooks</a><a class="shelf" href="englisheducational.html">English Educational</a><a class="shelf" href="englishnovels.html">English Novels</a><a class="shelf selected" href="finance.html">Finance</a><a class="shelf" href="kidsmovies.html">Kids Movies</a><a class="shelf" href="kidssection.html">Kids Section</a><a class="shelf" href="itunesaudiobooks.html">iTunes Audiobooks</a></div>
-                    <div class="navigation_footer"></div>
-                </div>
-                <!-- End sidebar -->
+                    </div> <!-- End media -->
+                </div> <!-- End collection -->
+                
                 <div style="clear: both;"></div>
-            </div>
-            <!-- End content -->
+            </div> <!-- End content -->
+            
             <div id="footer">
                 <a href="http://www.delicious-monster.com">
-                    <img src="images/monster.png" alt="" />
-                     Made with Delicious Library
+                    <img src="images/monster.png" alt=""> Made with Delicious Library
                 </a>
-                <p></p>
-            </div>
-            <!-- End footer -->
-        </div>
-        <!-- End container -->
+            <p>Springfield, State zipflap congrotus delicious library Jiwani, Faisal</p>
+            </div> <!-- End footer -->
+            
+        </div> <!-- End container -->
     </body>
 </html>

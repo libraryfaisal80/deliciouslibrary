@@ -14,11 +14,10 @@ mediaTypesToIconsNames['Movies'] = "movies";
 mediaTypesToIconsNames['Music'] = "music";
 mediaTypesToIconsNames['Software'] = "software";
 mediaTypesToIconsNames['Tools'] = "tools";
-mediaTypesToIconsNames['Toys'] = "toys";
+mediaTypesToIconsNames['Games'] = "toys";
 mediaTypesToIconsNames['Videogames'] = "videogames";
 
 function initialize() {
-    fillInMediaIcons();
     setupDragging();
     window.onresize = adjustDetailsMargin;
 }
@@ -38,9 +37,9 @@ function fillInMediaIcons() {
     for (var i = shelves.length - 1; i >= 0; i--) {
         var imageName = mediaTypesToIconsNames[shelves[i].innerHTML];
         if (imageName != null)
-            shelves[i].innerHTML = "<img src='images/" + imageName + ".png' alt='' />" + shelves[i].innerHTML;
+            shelves[i].innerHTML = "<img src='images/" + imageName + ".png' width='32' height='32' alt='' />" + shelves[i].innerHTML;
         else
-            shelves[i].innerHTML = "<img src='images/yourshelf.png' alt='' />" + shelves[i].innerHTML;
+            shelves[i].innerHTML = "<img src='images/yourshelf.png' width='32' height='32' alt='' />" + shelves[i].innerHTML;
     }
 }
 
