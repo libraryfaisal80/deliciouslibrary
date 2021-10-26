@@ -1,0 +1,53 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Strict//EN"
+    "http://www.w3.org/TR/xhtml1/DTD/xhtml1-strict.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+    <meta http-equiv="Content-Type" content="text/html; charset=utf-8">
+    <meta id="viewport" name="viewport" content="width=320; initial-scale=0.9; maximum-scale=0.9; user-scalable=no;">
+
+    <title>Library</title>
+    <link rel="stylesheet" href="style.css" type="text/css">
+    <style type="text/css">
+        .coverimage {
+            width: auto !important;
+            height: auto !important;
+            max-width: 110px;
+            max-height: 110px;
+        }
+    </style>
+    <script type="text/javascript" src="prototype.js"></script>
+    <script type="text/javascript" src="animator.js"></script>
+    <script type="text/javascript" src="library.js"></script>
+</head>
+<body>
+    <div id="libraryheader" style="width: 100%; height: 88px; background: url(../images/shelfheader.jpg)">
+        <div id="librarybanner">Library</div>
+        
+        <div id="shelfnavigation">
+            <select class="shelf_selection" onchange="location.href = this.options[this.selectedIndex].value;"><option value="index.html">Books</option><option value="biographies.html">Biographies</option><option value="faisalsfavorites.html">Faisal&apos;s Favorites</option><option value="fiction.html">Fiction</option><option value="finance.html">Finance</option><option value="nonfiction.html">Non-Fiction</option><option value="poetry.html">Poetry</option><option value="reviews.html">Reviews</option><option value="selfhelp.html" selected="selected">Self Help</option><option value="zohraanscollection.html">Zohraan&apos;s Collection</option></select>
+        </div>
+    </div>
+    
+    <table id="mediatable" border="0" cellspacing="0" cellpadding="0" style="width: 100%; background-image: url(../images/shelfpattern.png)">
+        <tr id="collection"><td><div class="medium"><div class="title">The New Lion Handbook : The World's Religions</div><span class="creator"></span><span class="rating"></span><span class="asin">0745951287</span><span class="description"></span><div class="cover coverimage" onclick="showDetails(this, event)"><img class="coverimage" src="../covers/1C5EF1C0-941C-4F16-AB45-375A8945672D-140.png" width="98" height="140"></div></div><div class="medium"><div class="title">God Is in the Small Stuff and It All Matters: Stop Worrying and Invite God into the Details of Your Life</div><span class="creator">Bruce Bickel, Stan Jantz</span><span class="rating"></span><span class="asin">1586604899</span><span class="description">A specially-priced limited edition of Bruce and Stan's bestseller. Their encouraging message: God is just as concerned with the little things in our lives as He is about the big issues. Practical, encouraging chapters, such as "You Can Know God's Will," "Simplify Life and Enjoy it More," and many more, include a two- to three-page reading followed by Bruce and Stan's wise and witty "In the Small Stuff" points. Easy-to-understand New International Version and New Living Translation Scriptures accompany the text.</span><div class="cover coverimage" onclick="showDetails(this, event)"><img class="coverimage" src="../covers/68D61E01-7838-4F99-80DF-318BD7C96BF3-140.png" width="123" height="140"></div></div><div class="medium"><div class="title">The One Minute Manager</div><span class="creator">Blanchard, Ken, Johnson, Spencer</span><span class="rating"></span><span class="asin">0007107927</span><span class="description"></span><div class="cover coverimage" onclick="showDetails(this, event)"><img class="coverimage" src="../covers/3DFCA6E6-6B68-4AAD-9682-9E0177990786-140.png" width="92" height="140"></div></div><div class="medium"><div class="title">my stroke insight</div><span class="creator">Bolte Taylor, Jill</span><span class="rating"></span><span class="asin">0340980508</span><span class="description"></span><div class="cover coverimage" onclick="showDetails(this, event)"><img class="coverimage" src="../covers/802855D9-A872-4E9F-9E8F-22748DB58494-140.png" width="93" height="140"></div></div><div class="medium"><div class="title">The Power</div><span class="creator">Byrne, Rhonda</span><span class="rating"></span><span class="asin">0857201700</span><span class="description"></span><div class="cover coverimage" onclick="showDetails(this, event)"><img class="coverimage" src="../covers/3ADEBA5A-023B-4C24-BB74-A232E2EA01B4-140.png" width="110" height="140"></div></div><div class="medium"><div class="title">The Secret</div><span class="creator">Byrne, Rhonda</span><span class="rating"></span><span class="asin">1847370292</span><span class="description">Fragments of a Great Secret have been found in the oral traditions, in literature, in religions and philosophies throughout the centuries. In this book, readers will learn how to use The Secret in every aspect of life - money, health, relationships, happiness, and in every interaction they have in the world.</span><div class="cover coverimage" onclick="showDetails(this, event)"><img class="coverimage" src="../covers/1A22ECA5-88A3-499A-8906-57B93A286C16-140.png" width="111" height="140"></div></div><div class="medium"><div class="title">Synchrodestiny : Harnessing the Infinite Power of Coincidence to Create Miracles</div><span class="creator">Chopra, Deepak</span><span class="rating"></span><span class="asin">1844132196</span><span class="description"></span><div class="cover coverimage" onclick="showDetails(this, event)"><img class="coverimage" src="../covers/C23F3420-BAF1-447A-BA61-FEB54017647F-140.png" width="89" height="140"></div></div><div class="medium"><div class="title">The Secret of 'The Secret'</div><span class="creator">Kelly, Karen</span><span class="rating"></span><span class="asin">0283070617</span><span class="description"></span><div class="cover coverimage" onclick="showDetails(this, event)"><img class="coverimage" src="../covers/3FACF09C-C9F3-4E45-BD00-41ABB893AB71-140.png" width="89" height="140"></div></div><div class="medium"><div class="title">Forty Rules Of Love</div><span class="creator">Shafak, Elif (turkey)</span><span class="rating"></span><span class="asin">0241972930</span><span class="description"></span><div class="cover coverimage" onclick="showDetails(this, event)"><img class="coverimage" src="../covers/B4A4C640-C75F-4C2F-9C33-75B94BDA4F0E-140.png" width="91" height="140"></div></div></td>
+        </tr>
+    </table>
+    
+    <div id="details" onclick="hideDetails()">
+        <div id="detailscover"></div>
+        <div id="detailsheader">
+            <div id="detailstitle"></div>
+            <div id="detailscreator"></div>
+            <hr>
+        </div>
+
+        <div id="detailsbody">
+        </div>
+
+        <div id="detailsfooter">
+            <hr>
+            <a id="searchinsideanchor" href="#"><img id="searchinside" src="../images/searchinside.png" alt="Search Inside"></a>
+        </div>
+    </div> <!-- end details -->
+</body>
+</html>

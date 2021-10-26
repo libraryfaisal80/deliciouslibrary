@@ -1,0 +1,21 @@
+Overall Cron Jobs Algorithm:
+
+Cron job 1:
+Handler 1:
+- Scan Cognito api(strip protected B)
+- upload Congnito results to s3 (json format)
+- call to export dynamo results in raw dynamo_json format through api and store results in (different s3 bucket)
+
+1 hr later
+
+Cron job 2:
+Handler 2:
+- Get list of files from (different s3 bucket) through api (delmit filter on .gz fromat)
+- unzip .gz fromat and store results in runtime array 
+- combine and format to json format
+- remove PB (apply pattern)
+- put to s3 bucket 
+- clear raw dynamo_json from s3 bucket
+- email
+
+DONE

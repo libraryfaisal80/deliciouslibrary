@@ -1,0 +1,53 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Strict//EN"
+    "http://www.w3.org/TR/xhtml1/DTD/xhtml1-strict.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+    <meta http-equiv="Content-Type" content="text/html; charset=utf-8">
+    <meta id="viewport" name="viewport" content="width=320; initial-scale=0.9; maximum-scale=0.9; user-scalable=no;">
+
+    <title>Library</title>
+    <link rel="stylesheet" href="style.css" type="text/css">
+    <style type="text/css">
+        .coverimage {
+            width: auto !important;
+            height: auto !important;
+            max-width: 110px;
+            max-height: 110px;
+        }
+    </style>
+    <script type="text/javascript" src="prototype.js"></script>
+    <script type="text/javascript" src="animator.js"></script>
+    <script type="text/javascript" src="library.js"></script>
+</head>
+<body>
+    <div id="libraryheader" style="width: 100%; height: 88px; background: url(../images/shelfheader.jpg)">
+        <div id="librarybanner">Library</div>
+        
+        <div id="shelfnavigation">
+            <select class="shelf_selection" onchange="location.href = this.options[this.selectedIndex].value;"><option value="index.html">Books</option><option value="biographies.html">Biographies</option><option value="faisalsfavorites.html">Faisal&apos;s Favorites</option><option value="fiction.html" selected="selected">Fiction</option><option value="finance.html">Finance</option><option value="nonfiction.html">Non-Fiction</option><option value="poetry.html">Poetry</option><option value="reviews.html">Reviews</option><option value="selfhelp.html">Self Help</option><option value="zohraanscollection.html">Zohraan&apos;s Collection</option></select>
+        </div>
+    </div>
+    
+    <table id="mediatable" border="0" cellspacing="0" cellpadding="0" style="width: 100%; background-image: url(../images/shelfpattern.png)">
+        <tr id="collection"><td><div class="medium"><div class="title">2 States: The Story of My Marriage</div><span class="creator">Chetan Bhagat</span><span class="rating"></span><span class="asin">8129115301</span><span class="description">Love marriages around the world are simple: Boy loves girl. Girl loves boy. They get married. In India, there are a few more steps: Boy loves Girl. Girl loves Boy. Girl's family has to love boy. Boy's family has to love girl. Girl's Family has to love Boy's Family. Boy's family has to love girl's family. Girl and Boy still love each other. They get married. Welcome to 2 States, a story about Krish and Ananya. They are from two different states of India, deeply in love and want to get married. Of course, their parents don t agree. To convert their love story into a love marriage, the couple have a tough battle in front of them. For it is easy to fight and rebel, but it is much harder to convince. Will they make it? From the author of blockbusters Five Point Someone, One Night @ the Call Center and The 3 Mistakes of My Life, comes another witty tale about inter-community marriages in modern india.</span><div class="cover coverimage" onclick="showDetails(this, event)"><img class="coverimage" src="../covers/1361F3F5-F661-4C2D-9858-09EA78BC1357-140.png" width="94" height="140"></div></div><div class="medium"><div class="title">The Master and Margarita</div><span class="creator">Bulgakov, Mikhail</span><span class="rating"></span><span class="asin">0330351346</span><span class="description"></span><div class="cover coverimage" onclick="showDetails(this, event)"><img class="coverimage" src="../covers/CDCC8C79-2FD8-4FB1-90F8-26B2ED3ABA33-140.png" width="92" height="140"></div></div><div class="medium"><div class="title">Laughable Loves</div><span class="creator">Kundera, Milan</span><span class="rating"></span><span class="asin">0571206921</span><span class="description"></span><div class="cover coverimage" onclick="showDetails(this, event)"><img class="coverimage" src="../covers/5486F383-C112-4DBE-995B-8B85169885AC-140.png" width="91" height="140"></div></div><div class="medium"><div class="title">The Other Side of Truth</div><span class="creator">Naidoo, Beverley</span><span class="rating"></span><span class="asin">0141304766</span><span class="description"></span><div class="cover coverimage" onclick="showDetails(this, event)"><img class="coverimage" src="../covers/A00CB7A7-9FFB-4425-8A52-880D808A60C8-140.png" width="93" height="140"></div></div><div class="medium"><div class="title">Harry Potter and the Philosopher's Stone</div><span class="creator">Rowling, J. K.</span><span class="rating"></span><span class="asin">0747532745</span><span class="description">Harry Potter is an ordinary boy who lives in a cupboard under the stairs at his Aunt Petunia and Uncle Vernon's house, which he thinks is normal for someone like him who's parents have been killed in a 'car crash'. He is bullied by them and his fat, spoilt cousin Dudley, and lives a very unremarkable life with only the odd hiccup (like his hair growing back overnight!) to cause him much to think about. That is until an owl turns up with a letter addressed to Harry and all hell breaks loose! He is literally rescued by a world where nothing is as it seems and magic lessons are the order of the day. Read and find out how Harry discovers his true heritage at Hogwarts School of Wizardry and Witchcraft, the reason behind his parents mysterious death, who is out to kill him, and how he uncovers the most amazing secret of all time, the fabled Philosopher's Stone! All this and muggles too. Now, what are they?</span><div class="cover coverimage" onclick="showDetails(this, event)"><img class="coverimage" src="../covers/8B933159-0EFD-4AD5-BB44-0BF72C5A74F5-140.png" width="88" height="140"></div></div></td>
+        </tr>
+    </table>
+    
+    <div id="details" onclick="hideDetails()">
+        <div id="detailscover"></div>
+        <div id="detailsheader">
+            <div id="detailstitle"></div>
+            <div id="detailscreator"></div>
+            <hr>
+        </div>
+
+        <div id="detailsbody">
+        </div>
+
+        <div id="detailsfooter">
+            <hr>
+            <a id="searchinsideanchor" href="#"><img id="searchinside" src="../images/searchinside.png" alt="Search Inside"></a>
+        </div>
+    </div> <!-- end details -->
+</body>
+</html>

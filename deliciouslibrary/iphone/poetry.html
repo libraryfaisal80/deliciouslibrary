@@ -1,0 +1,53 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Strict//EN"
+    "http://www.w3.org/TR/xhtml1/DTD/xhtml1-strict.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+    <meta http-equiv="Content-Type" content="text/html; charset=utf-8">
+    <meta id="viewport" name="viewport" content="width=320; initial-scale=0.9; maximum-scale=0.9; user-scalable=no;">
+
+    <title>Library</title>
+    <link rel="stylesheet" href="style.css" type="text/css">
+    <style type="text/css">
+        .coverimage {
+            width: auto !important;
+            height: auto !important;
+            max-width: 110px;
+            max-height: 110px;
+        }
+    </style>
+    <script type="text/javascript" src="prototype.js"></script>
+    <script type="text/javascript" src="animator.js"></script>
+    <script type="text/javascript" src="library.js"></script>
+</head>
+<body>
+    <div id="libraryheader" style="width: 100%; height: 88px; background: url(../images/shelfheader.jpg)">
+        <div id="librarybanner">Library</div>
+        
+        <div id="shelfnavigation">
+            <select class="shelf_selection" onchange="location.href = this.options[this.selectedIndex].value;"><option value="index.html">Books</option><option value="biographies.html">Biographies</option><option value="faisalsfavorites.html">Faisal&apos;s Favorites</option><option value="fiction.html">Fiction</option><option value="finance.html">Finance</option><option value="nonfiction.html">Non-Fiction</option><option value="poetry.html" selected="selected">Poetry</option><option value="reviews.html">Reviews</option><option value="selfhelp.html">Self Help</option><option value="zohraanscollection.html">Zohraan&apos;s Collection</option></select>
+        </div>
+    </div>
+    
+    <table id="mediatable" border="0" cellspacing="0" cellpadding="0" style="width: 100%; background-image: url(../images/shelfpattern.png)">
+        <tr id="collection"><td><div class="medium"><div class="title">A Tribute to Ghalib</div><span class="creator"></span><span class="rating"></span><span class="asin">0143429094</span><span class="description"></span><div class="cover coverimage" onclick="showDetails(this, event)"><img class="coverimage" src="../covers/B9E69379-4C51-4FD2-B8AC-B0F295699FA2-140.png" width="98" height="140"></div></div><div class="medium"><div class="title">Mirrored Life: The Rumi Novel</div><span class="creator">Bal, Rabisankar</span><span class="rating"></span><span class="asin">8184006152</span><span class="description"></span><div class="cover coverimage" onclick="showDetails(this, event)"><img class="coverimage" src="../covers/22F3B16E-32E1-446F-87A5-E3873AC59473-140.png" width="98" height="140"></div></div><div class="medium"><div class="title">Love Sonnets of Ghalib</div><span class="creator">Dr. Sarfaraz K. Niazi</span><span class="rating"></span><span class="asin">8171675964</span><span class="description">First English translation of complete Urdu Ghazals of Asia's most famous poet, Mirza Asadullah Khan Ghalib. Includes Urdu calligraphy, translation, explication, roman transliteration and extensive lexicon and glossary; bibliography. Artistic renditions by Sadequain.</span><div class="cover coverimage" onclick="showDetails(this, event)"><img class="coverimage" src="../covers/9FB0A9FB-16D5-4C57-BC69-B565CC394361-140.png" width="112" height="140"></div></div></td>
+        </tr>
+    </table>
+    
+    <div id="details" onclick="hideDetails()">
+        <div id="detailscover"></div>
+        <div id="detailsheader">
+            <div id="detailstitle"></div>
+            <div id="detailscreator"></div>
+            <hr>
+        </div>
+
+        <div id="detailsbody">
+        </div>
+
+        <div id="detailsfooter">
+            <hr>
+            <a id="searchinsideanchor" href="#"><img id="searchinside" src="../images/searchinside.png" alt="Search Inside"></a>
+        </div>
+    </div> <!-- end details -->
+</body>
+</html>
