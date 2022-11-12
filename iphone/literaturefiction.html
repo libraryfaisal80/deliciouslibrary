@@ -1,0 +1,53 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Strict//EN"
+    "http://www.w3.org/TR/xhtml1/DTD/xhtml1-strict.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+    <meta http-equiv="Content-Type" content="text/html; charset=utf-8">
+    <meta id="viewport" name="viewport" content="width=320; initial-scale=0.9; maximum-scale=0.9; user-scalable=no;">
+
+    <title>Library</title>
+    <link rel="stylesheet" href="style.css" type="text/css">
+    <style type="text/css">
+        .coverimage {
+            width: auto !important;
+            height: auto !important;
+            max-width: 110px;
+            max-height: 110px;
+        }
+    </style>
+    <script type="text/javascript" src="prototype.js"></script>
+    <script type="text/javascript" src="animator.js"></script>
+    <script type="text/javascript" src="library.js"></script>
+</head>
+<body>
+    <div id="libraryheader" style="width: 100%; height: 88px; background: url(../images/shelfheader.jpg)">
+        <div id="librarybanner">Library</div>
+        
+        <div id="shelfnavigation">
+            <select class="shelf_selection" onchange="location.href = this.options[this.selectedIndex].value;"><option value="index.html">Biographies &amp; Memoirs</option><option value="businessmoney.html">Business &amp; Money</option><option value="childrensbooks.html">Children&apos;s books</option><option value="healthfitnessdieting.html">Health, Fitness &amp; Dieting</option><option value="history.html">History</option><option value="humorentertainment.html">Humor &amp; Entertainment</option><option value="literaturefiction.html" selected="selected">Literature &amp; Fiction</option><option value="mysterythrillersuspense.html">Mystery, Thriller &amp; Suspense</option><option value="selfhelp.html">Self-Help</option><option value="teenyoungadult.html">Teen &amp; Young Adult</option></select>
+        </div>
+    </div>
+    
+    <table id="mediatable" border="0" cellspacing="0" cellpadding="0" style="width: 100%; background-image: url(../images/shelfpattern.png)">
+        <tr id="collection"><td><div class="medium"><div class="title">Mammoth Book of Short Spy Novels</div><span class="creator"></span><span class="rating"></span><span class="asin">184529114X</span><span class="description"></span><div class="cover coverimage" onclick="showDetails(this, event)"><img class="coverimage" src="../covers/5DF89A4A-6514-41DB-BDEE-E807279ADBB4-140.png" width="92" height="140"></div></div><div class="medium"><div class="title">The Magic Snow Bird: and Other Stories</div><span class="creator">Blyton, Enid, Hamilton, Dorothy</span><span class="rating"></span><span class="asin">0861634055</span><span class="description"></span><div class="cover coverimage" onclick="showDetails(this, event)"><img class="coverimage" src="../covers/4F84BBD5-1A47-4075-A11B-86462A019C67-140.png" width="92" height="140"></div></div><div class="medium"><div class="title">Hornet Flight</div><span class="creator">Follett, Ken</span><span class="rating"></span><span class="asin">B000NSGHO2</span><span class="description"></span><div class="cover coverimage" onclick="showDetails(this, event)"><img class="coverimage" src="../covers/AF516954-57C1-4A9A-B2EB-E43569FF87AA-140.png" width="100" height="140"></div></div><div class="medium"><div class="title">Break in</div><span class="creator">Francis, Dick</span><span class="rating"></span><span class="asin">033029380X</span><span class="description"></span><div class="cover coverimage" onclick="showDetails(this, event)"><img class="coverimage" src="../covers/A721CEEF-9237-4D8D-9B34-FFC792FCAFFD-140.png" width="89" height="140"></div></div><div class="medium"><div class="title">The Reluctant Fundamentalist</div><span class="creator">Hamid, Mohsin</span><span class="rating"></span><span class="asin">0241964172</span><span class="description"></span><div class="cover coverimage" onclick="showDetails(this, event)"><img class="coverimage" src="../covers/C0297D2F-8E35-484B-9CC3-218055235F01-140.png" width="91" height="140"></div></div></td>
+        </tr>
+    </table>
+    
+    <div id="details" onclick="hideDetails()">
+        <div id="detailscover"></div>
+        <div id="detailsheader">
+            <div id="detailstitle"></div>
+            <div id="detailscreator"></div>
+            <hr>
+        </div>
+
+        <div id="detailsbody">
+        </div>
+
+        <div id="detailsfooter">
+            <hr>
+            <a id="searchinsideanchor" href="#"><img id="searchinside" src="../images/searchinside.png" alt="Search Inside"></a>
+        </div>
+    </div> <!-- end details -->
+</body>
+</html>
